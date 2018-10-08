@@ -1,5 +1,9 @@
+.pageimage{
+float:right;	
+}
 body
-{
+{	
+	background:white;
 	margin: 0px;
 	padding: 0px;
 	font-size: 12px;
@@ -30,6 +34,7 @@ body
 
 #content
 {
+	width:80%;
 	padding: 5px;
 	margin-left: 160px;
 }
@@ -54,4 +59,23 @@ body
 {
 	text-decoration: none;
 	text-weight: bold;
+}
+#mainbody{
+	width:500px;
+	border:5px solid blue;
+}
+.info{
+	float-left:500px;
+	border:5px solid blue;
+	
+}
+.button{
+	background-color: grey; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
