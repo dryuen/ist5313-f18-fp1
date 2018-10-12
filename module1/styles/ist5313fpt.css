@@ -1,6 +1,4 @@
-.pageimage{
-float:right;	
-}
+
 body
 {	
 	background:white;
@@ -10,39 +8,6 @@ body
 	font-family: Arial;
 }
 
-#toc
-{
-	margin: 0px;
-	padding: 5px;
-	background: #888888;
-    position: fixed;
-    height: 100%;
-    width: 150px;
-    overflow-x: hidden;
-}
-
-#toc ul li
-{
-	margin-left: -20px;
-}
-
-#toc ul li a
-{
-	text-decoration: none;
-	color: #ffffff;
-}
-
-#content
-{
-	width:80%;
-	padding: 5px;
-	margin-left: 160px;
-}
-
-#main-layout
-{
-	display: table;
-}
 
 #main
 {
@@ -61,13 +26,16 @@ body
 	text-weight: bold;
 }
 #mainbody{
-	width:500px;
-	border:5px solid blue;
+	
 }
 .info{
-	float-left:500px;
-	border:5px solid blue;
+	font-size: 12px;
+	font-family: Arial;	
 	
+}
+#misc{
+	font-size: 12px;
+	font-family: Arial;
 }
 .button{
 	background-color: grey; 
