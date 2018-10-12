@@ -1,54 +1,88 @@
 <!doctype html>
 <html lang="en">
 	<head>
+		<title>Basic Cooking Equipment</title>
 		<meta charset="utf-8"/>
-		<title>Page title goes here</title>
-		<link href="styles/drag-and-drop.css" rel="stylesheet" type="text/css"/>
+		<meta name="viewport" content="width=device-width, initial-scale-1"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 		<link href="styles/ist5313fpt.css" rel="stylesheet" type="text/css"/>
-		<script src="scripts/drag-and-drop.js"></script>
 		
-		<!--- link your other script files here that are specific to this HTML page here --->
-	</head>	
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		</head>	
 	<body>
+		<div id="header" class="container">
+				<div class="row">
+					<div class="col-sm-6">
+					<h1>Drag and Drop</h1>
+					</div>
+					<div class="col-sm-6" id="pageimage">
+					<img src="images/banner.jpg" title="Banner" alt="Banner"/>
+					</div>
+				</div>
+			</div>
+				<br/>
 		<div id="main-layout">
-			<div id="toc">
-				<nav>
-					<h3>Module 0</h3>
-					<ul>
-						<li><a href="topic-1.html">Topic 1</a></li>
-						<li><a href="topic-2.html">Topic 2</a></li>
-						<li><a href="topic-3.html">Topic 3</a></li>
-						<li><a href="topic-4.html">Topic 4</a></li>
-						<li><a href="drag-and-drop.html">Drag and drop activity</a></li>
-						<li><a href="hotspots.html">Hotspots activity</a></li>
-						<li><a href="quiz.html">Quiz</a></li>
-						<li><a href="certificate.html">Certificate</a></li>
+			
+				<nav class="navbar navbar-default">
+					<div class="container-fluid">
+					<div class="collapse navbar-collapse" id= "myNavbar">
+					<a class="navbar-brand" href="#">What Every Beginner Chef Needs to Learn: Module 1</a>
+					</div>
+					
+					<ul class="nav navbar-nav" id="cards">
+						<li id="first"><a href="topic-1.html">Basic Equipment</a></li>
+						<li id="second"><a href="topic-2.html">Intro to Measurement</a></li>
+						<li id="third"><a href="topic-2-activity.html">Measurement Activity</a>
+						<li id="fourth"><a href="topic-3.html">Intro to Knives</a></li>
+						<li id="fifth"><a href="topic-3a.html">Basic Tools-Cutting</a></li>
+						<li id="sixth"><a href="topic-3b.html">Basic Tools-Paring</a></li>
+						<li id="seventh"><a href="topic-3-activity.html">Knife Activity</a>
+						<li id="eighth"><a href="topic-4.html">Basic Tools-Pans</a></li>
+						<li id="ninth"><a href="topic-4a.html">Saucepans</a></li>
+						<li id="tenth"><a href="topic-4b.html">Stockpots</a>
+						<li id="eleventh"><a href="topic-4c.html">Saute Pans</a></li>
+						<li id="twelvth"><a href="drag-and-drop.html">Drag and drop activity</a></li>
+						<li id="thirteenth"><a href="hotspots.html">Hotspots activity</a></li>
+						<li id="fourteenth"><a href="quiz.html">Quiz</a></li>
+						<li id="fifteenth"><a href="certificate.html">Certificate</a></li>
 					</ul>
+					</div>
 				</nav>
 			</div>
-			<div id="content">
+		<body>
+			<div class="container"  id="content">
+				<div class= "header clearfix">
             	<h1>Drag and Drop Activity</h1>
-            
-         		<form name="dd1" onsubmit="javascript:processForm(); return false;">  
+            	
+         		<form name="dd1" onsubmit="javascript:processForm(); return false;"> 
 				<p>Match each English word with its French equivalent.</p>
-				
-				<div class="column">
+				</div>
+			<div class="columns" >
+			<div class="col-sm-offset-3 col-sm-5" style="background-color:#40e5c1">
 						<h3>Draggers</h3>
 					 	<div id="d1" value="3" class="dragger" draggable="true"
 				     		ondragstart="return startDrag( event )"
-				     		ondragend="return endDrag( event )"><p>cat</p></div><br/>  
+				     		ondragend="return endDrag( event )"><p>cat</p>
+				     		</div>
+				     		<br/>  
 				     	<div id="d2" value="2" class="dragger" draggable="true"
 				     		ondragstart="return startDrag( event )"
-				     		ondragend="return endDrag( event )"><p>horse</p></div><br/>                        
+				     		ondragend="return endDrag( event )"><p>horse</p>
+				     		</div>
+				     		<br/>                        
 				 		<div id="d3" value="0" class="dragger" draggable="true"
 				     		ondragstart="return startDrag( event )"
-				     		ondragend="return endDrag( event )"><p>dog</p></div><br/>  
+				     		ondragend="return endDrag( event )"><p>dog</p>
+				     		</div>
+				     		<br/>  
 					 	<div id="d4" value="1" class="dragger" draggable="true"
 				     		ondragstart="return startDrag( event )"
 				     		ondragend="return endDrag( event )"><p>bird</p></div><br/>  
 				</div>
+				</div>
 				
-				    
+				<div class="rows" >
+			<div class= "col-sm-offset-3 col-sm-5" style="background-color:#dec6f4">    
 				<div class="column">
 						<h3>Dragger Bays</h3>
 				     	<div id="db1" value="0" class="draggerbay" 
@@ -68,11 +102,22 @@
 				     		ondragover="return false"
 				     		ondragenter="return enterDragger( event )"><p>le chat</p></div><br/>  
 				</div>
+				</div>
+				
+				</div>
 				<p id="response">&nbsp;</p>
 				<input type="submit" name="button" value="Submit Your Answer"/><br/>
 				</form>
 				</div>
+		
+	<div class="container" id="content-tools">
+					<div class="row">
+					<div class="btn-group btn-group-justified" >
+					<a class="button" href="#">Previous</a> | <a class="button" href="#">Next</a> | <a class="button" href="#">Script</a>
+				</div>
+				</div>
 			</div>
-		</div>
+		
 	</body>
-</html>
+</html>		
+	

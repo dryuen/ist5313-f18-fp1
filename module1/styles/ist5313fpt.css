@@ -1,19 +1,119 @@
-
 body
 {	
-	background:white;
+	background:#fdfce4;
 	margin: 0px;
 	padding: 0px;
 	font-size: 12px;
 	font-family: Arial;
 }
-
-
-#main
-{
-	padding: 10px;
+#header{
+	color:#45696D;
 }
 
+#myNavbar
+{
+	color:#a8f3e2;
+	font-size:18px;
+	text-align:center;
+}
+
+
+#cards{
+	color:#45696D;	
+	 list-style-type: none;
+	 display:inline;
+	
+}
+#first{
+	border-radius:0px 50px 0px 0px;
+	background-color:#f4d8f4;
+	color:#2a3f42;
+	 
+}
+#second{
+	border-radius:0px 50px 0px 0px;
+	background-color:#fcf9c4;
+	color:#2a3f42;
+ 
+}
+#third{
+	border-radius:0px 50px 0px 0px;
+	background-color:#dec6f4;
+	color:#2a3f42;
+	 
+}
+#fourth{
+	border-radius:0px 50px 0px 0px;
+	background-color:#40e5c1;
+	color:#2a3f42;
+	 
+}
+#fifth{
+	border-radius:0px 50px 0px 0px;
+	background-color:#97e5ef;
+	color:#2a3f42;
+ 
+}
+#sixth{
+	border-radius:0px 50px 0px 0px;
+	background-color:#f4d8f4;
+	color:#2a3f42;	
+	 
+}
+#seventh{
+	border-radius:0px 50px 0px 0px;
+	background-color:#fcf9c4;
+	color:#2a3f42;
+	 
+}
+#eighth{
+	border-radius:0px 50px 0px 0px;
+	background-color:#dec6f4;
+	color:#2a3f42;
+	 
+}
+#ninth{
+	border-radius:0px 50px 0px 0px;
+	background-color:#40e5c1;
+	color:#2a3f42;
+	 
+}
+#tenth{
+	border-radius:0px 50px 0px 0px;
+	background-color:#97e5ef;
+	color:#2a3f42;	
+	 	
+}
+#eleventh{
+	border-radius:0px 50px 0px 0px;
+	background-color:#fcf9c4;
+	color:#2a3f42;
+	 	
+}
+#twelvth{
+	border-radius:0px 50px 0px 0px;
+	background-color:#dec6f4;
+	color:#2a3f42;
+	 	
+}
+#thirteenth{
+	border-radius:0px 50px 0px 0px;
+	background-color:#f4d8f4;
+	color:#2a3f42;
+	 
+}
+#fourteenth{
+	border-radius:0px 50px 0px 0px;
+	background-color:#40e5c1;
+	color:#2a3f42;
+	 
+}
+#fifteenth{
+	border-radius:0px 50px 0px 0px;
+	background-color:#97e5ef;
+	color:#2a3f42;
+	 
+}
 #content-tools
 {
 	text-align: right;
@@ -25,8 +125,9 @@ body
 	text-decoration: none;
 	text-weight: bold;
 }
-#mainbody{
-	
+#videos{
+	color:#45696D;
+	background-color:#efc2cd;
 }
 .info{
 	font-size: 12px;
@@ -38,9 +139,9 @@ body
 	font-family: Arial;
 }
 .button{
-	background-color: grey; 
+	background-color:#514859; 
     border: none;
-    color: white;
+    color:white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
