@@ -1,19 +1,20 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<title>Intro to Meal Preparation</title>
+		<title>Basic Cooking Equipment</title>
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale-1"/>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 		<link href="styles/ist5313fpt.css" rel="stylesheet" type="text/css"/>
 		
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="scripts/quiz.js"></script>
 		</head>	
 	<body>
 		<div id="header" class="container">
 				<div class="row">
 					<div class="col-sm-6">
-					<h1>Quiz</h1>
+					<h1>Topic 1 Basic Equipment</h1>
 					</div>
 					<div class="col-sm-6" id="pageimage">
 					<img src="images/banner.jpg" title="Banner" alt="Banner"/>
@@ -26,21 +27,21 @@
 				<nav class="navbar navbar-default">
 					<div class="container-fluid">
 					<div class="collapse navbar-collapse" id= "myNavbar">
-					<a class="navbar-brand" href="#">What Every Beginner Chef Needs to Learn: Intro to Meal Preparation</a>
+					<a class="navbar-brand" href="#">What Every Beginner Chef Needs to Learn: Module 1</a>
 					</div>
 					
 					<ul class="nav navbar-nav" id="cards">
-						<li id="first"><a href="topic-1.html">Into to Meal Prep</a></li>
-						<li id="second"><a href="topic-2.html">Basics of Food Safety</a></li>
-						<li id="third"><a href="topic-2-activity.html">Safety Activity</a>
-						<li id="fourth"><a href="topic-3.html">Intro to Meal Planning</a></li>
-						<li id="fifth"><a href="topic-3a.html">Kitchen Staples</a></li>
-						<li id="sixth"><a href="topic-3b.html">Shopping Basics</a></li>
-						<li id="seventh"><a href="topic-3-activity.html">Prep Activity</a>
-						<li id="eighth"><a href="topic-4.html">Cooking with Heat</a></li>
-						<li id="ninth"><a href="topic-4a.html">Gas vs Electric</a></li>
-						<li id="tenth"><a href="topic-5.html">Recipes Basics </a>
-						<li id="eleventh"><a href="topic-5a.html">Recipice Cards</a></li>
+						<li id="first"><a href="topic-1.html">Basic Equipment</a></li>
+						<li id="second"><a href="topic-2.html">Intro to Measurement</a></li>
+						<li id="third"><a href="topic-2-activity.html">Measurement Activity</a>
+						<li id="fourth"><a href="topic-3.html">Intro to Knives</a></li>
+						<li id="fifth"><a href="topic-3a.html">Basic Tools-Cutting</a></li>
+						<li id="sixth"><a href="topic-3b.html">Basic Tools-Paring</a></li>
+						<li id="seventh"><a href="topic-3-activity.html">Knife Activity</a>
+						<li id="eighth"><a href="topic-4.html">Basic Tools-Pans</a></li>
+						<li id="ninth"><a href="topic-4a.html">Saucepans</a></li>
+						<li id="tenth"><a href="topic-4b.html">Stockpots</a>
+						<li id="eleventh"><a href="topic-4c.html">Saute Pans</a></li>
 						<li id="twelvth"><a href="drag-and-drop.html">Drag and drop activity</a></li>
 						<li id="thirteenth"><a href="hotspots.html">Hotspots activity</a></li>
 						<li id="fourteenth"><a href="quiz.html">Quiz</a></li>
@@ -49,7 +50,46 @@
 					</div>
 				</nav>
 			</div>
-			<div class="container" id="content-tools">
+			<header>
+		<h1>Quiz Example</h1>
+		<p>Select the correct answer for each question. There is only one correct
+		per question. Click the Submit Answers button when you have answered all 
+		the questions.</p>
+		</header>
+		
+		<section>
+			<form id="quiz1" name="quiz1" action="javascript:processQuiz(); return false;">
+				<label for="question1">1. What does nonstick mean?</label>
+				<br/>
+				<input type="radio" id="question1" name="question1" value="0" required/>
+				A coating pans to keep food from burning?<br/>
+				<input type="radio" id="question1" name="question1" value="1"/>
+				Nothing will stick ever!!!<br/>
+				<input type="radio" id="question1" name="question1" value="2"/>
+				I Seek Therapy<br/><br/>
+				
+				<label for="question2">2. What is utensils are used with non stick?</label>
+				<br/>
+				<input type="radio" id="question2" name="question2" value="0"/>
+				Metal<br/>
+				<input type="radio" id="question2" name="question2" value="1"/>
+				Wood<br/>
+				<input type="radio" id="question2" name="question2" value="2"/>
+				Glass<br/><br/>
+				
+				<label for="question3">3. What does full tang mean?</label>
+				<br/>
+				<input type="radio" id="question3" name="question3" value="0"/>
+				Running the full length<br/>
+				<input type="radio" id="question3" name="question3" value="1"/>
+				Along the top!<br/>
+				<input type="radio" id="question3" name="question3" value="2"/>
+				Whatever!! Not Important<br/><br/>
+				
+				<input type="submit" value="Submit Answers"/>
+			</form>
+		</section>
+		<div class="container" id="content-tools">
 					<div class="row">
 					<div class="btn-group btn-group-justified" >
 					<a class="button" href="#">Previous</a> | <a class="button" href="#">Next</a> | <a class="button" href="#">Script</a>
@@ -57,5 +97,6 @@
 				</div>
 			</div>
 		
-	</body>
-</html>
+	
+		</body>
+		</html>

@@ -8,6 +8,7 @@
 		<link href="styles/ist5313fpt.css" rel="stylesheet" type="text/css"/>
 		
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="scripts/quiz.js"></script>
 		</head>	
 	<body>
 		<div id="header" class="container">
@@ -49,7 +50,46 @@
 					</div>
 				</nav>
 			</div>
-				<div class="container" id="content-tools">
+			<header>
+		<h1>Quiz Example</h1>
+		<p>Select the correct answer for each question. There is only one correct
+		per question. Click the Submit Answers button when you have answered all 
+		the questions.</p>
+		</header>
+		
+		<section>
+			<form id="quiz1" name="quiz1" action="javascript:processQuiz(); return false;">
+				<label for="question1">1. What does nonstick mean?</label>
+				<br/>
+				<input type="radio" id="question1" name="question1" value="0" required/>
+				A coating pans to keep food from burning?<br/>
+				<input type="radio" id="question1" name="question1" value="1"/>
+				Nothing will stick ever!!!<br/>
+				<input type="radio" id="question1" name="question1" value="2"/>
+				I Seek Therapy<br/><br/>
+				
+				<label for="question2">2. What is utensils are used with non stick?</label>
+				<br/>
+				<input type="radio" id="question2" name="question2" value="0"/>
+				Metal<br/>
+				<input type="radio" id="question2" name="question2" value="1"/>
+				Wood<br/>
+				<input type="radio" id="question2" name="question2" value="2"/>
+				Glass<br/><br/>
+				
+				<label for="question3">3. What does full tang mean?</label>
+				<br/>
+				<input type="radio" id="question3" name="question3" value="0"/>
+				Running the full length<br/>
+				<input type="radio" id="question3" name="question3" value="1"/>
+				Along the top!<br/>
+				<input type="radio" id="question3" name="question3" value="2"/>
+				Whatever!! Not Important<br/><br/>
+				
+				<input type="submit" value="Submit Answers"/>
+			</form>
+		</section>
+		<div class="container" id="content-tools">
 					<div class="row">
 					<div class="btn-group btn-group-justified" >
 					<a class="button" href="#">Previous</a> | <a class="button" href="#">Next</a> | <a class="button" href="#">Script</a>
