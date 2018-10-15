@@ -173,11 +173,20 @@ body
   backface-visibility: hidden;
 }
 .flip-box-front {
-  background-color: #bbb;
+  background-color:#40e5c1;
   color: black;
 }
 .flip-box-back {
-  background-color: dodgerblue;
+  background-color: #97e5ef;
   color: white;
   transform: rotateY(180deg);
+}
+.dragger{
+	background-color:#40e5c1;
+}
+.draggerbay{
+	background-color:#f4d8f4;
+}
+.hotspot{
+	Background-color:#efc2cd;
 }

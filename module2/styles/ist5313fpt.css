@@ -147,4 +147,13 @@ body
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-}}
+}
+.dragger{
+	background-color:#40e5c1;
+}
+.draggerbay{
+	background-color:#f4d8f4;
+}
+.hotspot{
+	Background-color:#efc2cd;
+}
