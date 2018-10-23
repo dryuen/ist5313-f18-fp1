@@ -20,6 +20,11 @@
 			<location>C:/Users/doccr/git/ist5313-f18-fp1/module1/images/cutting.jpg</location>
 		</link>
 		<link>
+			<name>module1/images/knifesketch.png</name>
+			<type>1</type>
+			<location>C:/Users/doccr/git/ist5313-f18-fp1/module1/images/knifesketch.png</location>
+		</link>
+		<link>
 			<name>module1/images/measuring-cup.jpg</name>
 			<type>1</type>
 			<location>C:/Users/doccr/git/ist5313-f18-fp1/module1/images/measuring-cup.jpg</location>
@@ -35,9 +40,19 @@
 			<location>C:/Users/doccr/git/ist5313-f18-fp1/module1/images/saute.jpg</location>
 		</link>
 		<link>
+			<name>module1/images/scale.png</name>
+			<type>1</type>
+			<location>C:/Users/doccr/git/ist5313-f18-fp1/module1/images/scale.png</location>
+		</link>
+		<link>
 			<name>module1/images/stockpots.jpg</name>
 			<type>1</type>
 			<location>C:/Users/doccr/git/ist5313-f18-fp1/module1/images/stockpots.jpg</location>
+		</link>
+		<link>
+			<name>module1/images/thermometer.png</name>
+			<type>1</type>
+			<location>C:/Users/doccr/git/ist5313-f18-fp1/module1/images/thermometer.png</location>
 		</link>
 		<link>
 			<name>module2/images/Kitchen.jpg</name>
@@ -63,6 +78,11 @@
 			<name>module2/images/store.jpg</name>
 			<type>1</type>
 			<location>C:/Users/doccr/git/ist5313-f18-fp1/module2/images/store.jpg</location>
+		</link>
+		<link>
+			<name>module2/images/thermometer.png</name>
+			<type>1</type>
+			<location>C:/Users/doccr/git/ist5313-f18-fp1/module1/images/thermometer.png</location>
 		</link>
 		<link>
 			<name>module3/images/flipcards.png</name>
