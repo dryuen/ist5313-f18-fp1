@@ -6,16 +6,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale-1"/>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 		<link href="styles/ist5313fpt.css" rel="stylesheet" type="text/css"/>
-		<link href="styles/drag-and-drop.css" rel="stylesheet" type="text/css"/>
-		<script src="scripts/drag-and-drop.js"></script>
-	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</head>		
 	<body>
 		<div id="header" class="container">
 				<div class="row">
 					<div class="col-sm-6">
-					<h1>Drag and Drop</h1>
+					<h1>Recipe Activity</h1>
 					</div>
 					<div class="col-sm-6" id="pageimage">
 					<img src="images/pastacollage.jpg" title="Pasta Collage" alt="Pasta Collage"style="max-height:200px"/>
@@ -43,7 +41,7 @@
 						<li id= "ninth"><a href="topic-4a.html">Oven Matching </a>
 						<li id="tenth"><a href="topic-5.html">Recipe Basics</a></li>
 						<li id="eleventh"><a href="topic-5a.html">Recipes Cards </a>
-						<li id="twelvth"><a href="drag-and-drop.html">Recipe Activity</a></li>
+						<li id="twelvth"><a href="recipe-activity.html">Recipe Activity</a></li>
 						<li id="thirteenth"><a href="quiz.html">Quiz</a></li>
 						<li id="fourteenth"><a href="certificate.html">Certificate</a></li>
 						
@@ -55,50 +53,49 @@
 					<div id="content">
             	<h1>Recipe Activity</h1>
             
-         		<form name="dd1" onsubmit="javascript:processForm(); return false;">  
-				<p>Match each English word with its French equivalent.</p>
-				
-				<div class="column">
-						<h3>Draggers</h3>
-					 	<div id="d1" value="3" class="dragger" draggable="true"
-				     		ondragstart="return startDrag( event )"
-				     		ondragend="return endDrag( event )"><p>term</p></div><br/>  
-				     	<div id="d2" value="2" class="dragger" draggable="true"
-				     		ondragstart="return startDrag( event )"
-				     		ondragend="return endDrag( event )"><p>term</p></div><br/>                        
-				 		<div id="d3" value="0" class="dragger" draggable="true"
-				     		ondragstart="return startDrag( event )"
-				     		ondragend="return endDrag( event )"><p>term</p></div><br/>  
-					 	<div id="d4" value="1" class="dragger" draggable="true"
-				     		ondragstart="return startDrag( event )"
-				     		ondragend="return endDrag( event )"><p>term</p></div><br/>  
-				</div>
-				
-				    
-				<div class="column">
-						<h3>Dragger Bays</h3>
-				     	<div id="db1" value="0" class="draggerbay" 
-				     		ondrop="return dropDragger( event )"
-				     		ondragover="return false"
-				     		ondragenter="return enterDragger( event )"><p>definition</p></div><br/>                        
-				 		<div id="db2" value="1" class="draggerbay"
-				     		ondrop="return dropDragger( event )"
-				     		ondragover="return false"
-				     		ondragenter="return enterDragger( event )"><p>definition</p></div><br/>  
-					 	<div id="db3" value="2" class="draggerbay"
-				     		ondrop="return dropDragger( event )"
-				     		ondragover="return false"
-				     		ondragenter="return enterDragger( event )"><p>definition </p></div><br/> 
-					 	<div id="db4" value="3" class="draggerbay"
-				     		ondrop="return dropDragger( event )"
-				     		ondragover="return false"
-				     		ondragenter="return enterDragger( event )"><p>definition</p></div><br/>  
-				</div>
-				<p id="response">&nbsp;</p>
-				<input type="submit" name="button" value="Submit Your Answer"/><br/>
-				</form>
-				</div>
-		
+  			 <form class="form-inline" action="/action_page.php">
+ 			 <div class="form-group">
+  			<h2>Build your own Stir Fry</h2>
+  			<ol>
+  			<li><label for="sel1">Select the Meat</label></li>
+  		<select class="form-control" id="sel1">
+   		 <option>Chicken Strips</option>
+   		 <option>Beef Strips</option>
+   		 <option>Polish Sausage</option>
+    	 <option>Shrimp</option>
+ 		 </select>
+ 		 <li><label for="sel2">Select a Vegetable</label></li>
+  		<select class="form-control" id="sel2">
+   		 <option>Yellow Squash</option>
+   		 <option>Zucchini</option>
+   		 <option>Red Pepper</option>
+    	 <option>Green Pepper</option>
+ 		 </select>
+ 		<li><label for="sel3">Select a Vegetable</label></li>
+  		<select class="form-control" id="sel3">
+   		 <option>Yellow Onion</option>
+   		 <option>Red Onion</option>
+   		 <option>Green Onion</option>
+    	 <option>Water Chestnut</option>
+ 		 </select>
+ 		 <li><label for="sel4">Select a Vegetable</label></li>
+  		<select class="form-control" id="sel4">
+   		 <option>Snow Peas</option>
+   		 <option>Grean Beans</option>
+   		 <option>Roma Tomatos</option>
+    	 <option>Black Olives</option>
+ 		 </select>
+ 		<li> <label for="sel5">Select the Starch</label></li>
+  		<select class="form-control" id="sel5">
+   		 <option>Linguini</option>
+   		 <option>Rice Noodles</option>
+   		 <option>White Rice</option>
+    	 <option>Couscous</option>
+ 		 </select>
+ 		 </ol>
+		</div>
+         <p>Cook meat in a frying pan until it is the correct internal temperature. Cook starch until al dente. Saute veagatable until they are the desired consistency. Have diners choose the items they want in their dish and throw hte starch in a heated pan. Add the vegatables and meat add toss with the deired sauce until warm. Serve in a bowl.</p>		
+		</form>
 		<div class="container" id="content-tools">
 					<div class="row">
 					<div class="btn-group btn-group-justified" >
