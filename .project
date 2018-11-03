@@ -10,6 +10,16 @@
 	</natures>
 	<linkedResources>
 		<link>
+			<name>module1/images/breadknife.jpg</name>
+			<type>1</type>
+			<location>C:/Users/doccr/git/ist5313-f18-fp1/module1/images/breadknife.jpg</location>
+		</link>
+		<link>
+			<name>module1/images/chef.jpg</name>
+			<type>1</type>
+			<location>C:/Users/doccr/git/ist5313-f18-fp1/module1/images/chef.jpg</location>
+		</link>
+		<link>
 			<name>module1/images/copper.jpg</name>
 			<type>1</type>
 			<location>C:/Users/doccr/git/ist5313-f18-fp1/module1/images/copper.jpg</location>
@@ -33,6 +43,11 @@
 			<name>module1/images/paring.jpg</name>
 			<type>1</type>
 			<location>C:/Users/doccr/git/ist5313-f18-fp1/module1/images/paring.jpg</location>
+		</link>
+		<link>
+			<name>module1/images/paring1.jpg</name>
+			<type>1</type>
+			<location>C:/Users/doccr/git/ist5313-f18-fp1/module1/images/paring1.jpg</location>
 		</link>
 		<link>
 			<name>module1/images/saute.jpg</name>
@@ -60,6 +75,11 @@
 			<location>C:/Users/doccr/git/ist5313-f18-fp1/module1/images/thermometer.png</location>
 		</link>
 		<link>
+			<name>module1/images/tomatoknife.jpg</name>
+			<type>1</type>
+			<location>C:/Users/doccr/git/ist5313-f18-fp1/module1/images/tomatoknife.jpg</location>
+		</link>
+		<link>
 			<name>module2/images/Kitchen.jpg</name>
 			<type>1</type>
 			<location>C:/Users/doccr/git/ist5313-f18-fp1/module2/images/Kitchen.jpg</location>
@@ -70,9 +90,24 @@
 			<location>C:/Users/doccr/git/ist5313-f18-fp1/module2/images/basket.jpg</location>
 		</link>
 		<link>
+			<name>module2/images/broiler.jpg</name>
+			<type>1</type>
+			<location>C:/Users/doccr/git/ist5313-f18-fp1/module2/images/broiler.jpg</location>
+		</link>
+		<link>
+			<name>module2/images/chicken-convection.jpg</name>
+			<type>1</type>
+			<location>C:/Users/doccr/git/ist5313-f18-fp1/module2/images/chicken-convection.jpg</location>
+		</link>
+		<link>
 			<name>module2/images/cross-contamination.jpg</name>
 			<type>1</type>
 			<location>C:/Users/doccr/git/ist5313-f18-fp1/module2/images/cross-contamination.jpg</location>
+		</link>
+		<link>
+			<name>module2/images/electric.jpg</name>
+			<type>1</type>
+			<location>C:/Users/doccr/git/ist5313-f18-fp1/module2/images/electric.jpg</location>
 		</link>
 		<link>
 			<name>module2/images/ingredients.jpg</name>
@@ -83,6 +118,11 @@
 			<name>module2/images/measuring-cups.jpg</name>
 			<type>1</type>
 			<location>C:/Users/doccr/git/ist5313-f18-fp1/module2/images/measuring-cups.jpg</location>
+		</link>
+		<link>
+			<name>module2/images/microwave.jpg</name>
+			<type>1</type>
+			<location>C:/Users/doccr/git/ist5313-f18-fp1/module2/images/microwave.jpg</location>
 		</link>
 		<link>
 			<name>module2/images/separate.jpg</name>
@@ -98,6 +138,16 @@
 			<name>module2/images/thermometer.png</name>
 			<type>1</type>
 			<location>C:/Users/doccr/git/ist5313-f18-fp1/module1/images/thermometer.png</location>
+		</link>
+		<link>
+			<name>module2/images/vegetables.jpg</name>
+			<type>1</type>
+			<location>C:/Users/doccr/git/ist5313-f18-fp1/module2/images/vegetables.jpg</location>
+		</link>
+		<link>
+			<name>module2/images/zuccs.jpg</name>
+			<type>1</type>
+			<location>C:/Users/doccr/git/ist5313-f18-fp1/module2/images/zuccs.jpg</location>
 		</link>
 		<link>
 			<name>module3/images/dough.jpg</name>

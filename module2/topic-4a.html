@@ -56,43 +56,43 @@
             	<h1>Oven Matching</h1>
             
          		<form name="dd1" onsubmit="javascript:processForm(); return false;">  
-				<p>Match the oven type with the correct cooking styles.</p>
+				<p style="font-size:18px;">Match the oven type with the correct cooking styles.</p>
 				
 				<div class="column">
 						<h3>Ovens</h3>
-					 	<div id="d1" value="3" class="dragger" draggable="true"
+					 	<div style="height:200px;width:200px;"id="d1" value="3" class="dragger" draggable="true"
 				     		ondragstart="return startDrag( event )"
-				     		ondragend="return endDrag( event )"><p>Microwave</p></div><br/>  
-				     	<div id="d2" value="2" class="dragger" draggable="true"
+				     		ondragend="return endDrag( event )"><p><img src="images/microwave.jpg" title="Microwave" alt="Microwave" style="max-height:200px;max-width:200px;">Microwave</p></div><br/>  
+				     	<div style="height:200px;width:200px;" id="d2" value="2" class="dragger" draggable="true"
 				     		ondragstart="return startDrag( event )"
-				     		ondragend="return endDrag( event )"><p>Convection</p></div><br/>                        
-				 		<div id="d3" value="0" class="dragger" draggable="true"
+				     		ondragend="return endDrag( event )"><p><img src="images/chicken-convection.jpg" title="Convection Oven" alt="Convection Oven" style="max-height:200px;max-width:200px;">Convection</p></div><br/>                        
+				 		<div style="height:200px;width:200px;" id="d3" value="0" class="dragger" draggable="true"
 				     		ondragstart="return startDrag( event )"
-				     		ondragend="return endDrag( event )"><p>Electric</p></div><br/>  
-					 	<div id="d4" value="1" class="dragger" draggable="true"
+				     		ondragend="return endDrag( event )"><p><img src="images/electric.jpg" title="Electric Oven" alt="Electric Oven" style="max-height:200px;max-width:200px;">Electric</p></div><br/>  
+					 	<div style="height:200px;width:200px;" id="d4" value="1" class="dragger" draggable="true"
 				     		ondragstart="return startDrag( event )"
-				     		ondragend="return endDrag( event )"><p>Broiler</p></div><br/>  
+				     		ondragend="return endDrag( event )"><p><img src="images/broiler.jpg" title="Oven Broiler" alt="Broiler" style="max-height:200px;max-width:200px;">Broiler</p></div><br/>  
 				</div>
 				
 				    
 				<div class="column">
 						<h3>Cooking Style</h3>
-				     	<div id="db1" value="0" class="draggerbay" 
+				     	<div style="height:200px;width:200px;" id="db1" value="0" class="draggerbay" 
 				     		ondrop="return dropDragger( event )"
 				     		ondragover="return false"
-				     		ondragenter="return enterDragger( event )"><p>definition</p></div><br/>                        
-				 		<div id="db2" value="1" class="draggerbay"
+				     		ondragenter="return enterDragger( event )"><p style="font-size:21px;">Great for baking and heating frozen foods.</p></div><br/>                        
+				 		<div style="height:200px;width:200px;font-size:21px;" id="db2" value="1" class="draggerbay"
 				     		ondrop="return dropDragger( event )"
 				     		ondragover="return false"
-				     		ondragenter="return enterDragger( event )"><p>definition</p></div><br/>  
-					 	<div id="db3" value="2" class="draggerbay"
+				     		ondragenter="return enterDragger( event )"><p style="font-size:21px;">This part of the oven is good for searing meat at high temperatures.</p></div><br/>  
+					 	<div style="height:200px;width:200px;font-size:21px;" id="db3" value="2" class="draggerbay"
 				     		ondrop="return dropDragger( event )"
 				     		ondragover="return false"
-				     		ondragenter="return enterDragger( event )"><p>definition </p></div><br/> 
-					 	<div id="db4" value="3" class="draggerbay"
+				     		ondragenter="return enterDragger( event )"><p style="font-size:21px;">The movement of air distributes heat and allows for more even cooking.</p></div><br/> 
+					 	<div style="height:200px;width:200px;font-size:21px;" id="db4" value="3" class="draggerbay"
 				     		ondrop="return dropDragger( event )"
 				     		ondragover="return false"
-				     		ondragenter="return enterDragger( event )"><p>definition</p></div><br/>  
+				     		ondragenter="return enterDragger( event )"><p style="font-size:21px;">This oven is good for quick heating, making popcorn, and steaming vegetables.</p></div><br/>  
 				</div>
 				<p id="response">&nbsp;</p>
 				<input type="submit" name="button" value="Submit Your Answer"/><br/>
