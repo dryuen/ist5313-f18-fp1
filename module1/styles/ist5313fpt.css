@@ -184,4 +184,6 @@ img{
   color: white;
   transform: rotateY(180deg);
 }
-
+p{
+	font-size:15px
+}
