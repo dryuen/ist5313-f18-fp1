@@ -130,6 +130,11 @@
 			<location>C:/Users/doccr/git/ist5313-f18-fp1/module2/images/separate.jpg</location>
 		</link>
 		<link>
+			<name>module2/images/spicerack2.jpg</name>
+			<type>1</type>
+			<location>C:/Users/doccr/git/ist5313-f18-fp1/module2/images/spicerack2.jpg</location>
+		</link>
+		<link>
 			<name>module2/images/store.jpg</name>
 			<type>1</type>
 			<location>C:/Users/doccr/git/ist5313-f18-fp1/module2/images/store.jpg</location>
