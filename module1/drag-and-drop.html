@@ -7,9 +7,10 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 		<link href="styles/ist5313fpt.css" rel="stylesheet" type="text/css"/>
 		<link href="styles/drag-and-drop.css" rel="stylesheet" type="text/css"/>
-		<script src="scripts/drag-and-drop.js"></script>
-	
+		
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="scripts/drag-and-drop.js"></script>
 	</head>		
 	<body>
 		<div id="header" class="container">
@@ -75,28 +76,37 @@
 				    
 				<div class="column">
 						<h3>Purpose</h3>
-				     	<div style="height:200px;width:200px;font-size:21px;" id="db1" value="0" class="draggerbay" 
+				     	<div style="height:200px;width:200px;" id="db1" value="0" class="draggerbay" 
 				     		ondrop="return dropDragger( event )"
 				     		ondragover="return false"
-				     		ondragenter="return enterDragger( event )"><p>Used to cook gravies, sauces, etc.</p></div><br/>                        
-				 		<div style="height:200px;width:200px;font-size:21px;" id="db2" value="1" class="draggerbay"
+				     		ondragenter="return enterDragger( event )"><p style="font-size:24px;">Used to cook gravies, sauces, etc.</p></div><br/>                        
+				 		<div style="height:200px;width:200px;font-size:28px;" id="db2" value="1" class="draggerbay"
 				     		ondrop="return dropDragger( event )"
 				     		ondragover="return false"
-				     		ondragenter="return enterDragger( event )"><p> A wide, flat bottomed pan with relatively tall, vertical sides. Great for one pan meals.</p></div><br/>  
-					 	<div style="height:200px;width:200px;font-size:21px;" id="db3" value="2" class="draggerbay"
+				     		ondragenter="return enterDragger( event )"><p style="font-size:24px;"> A wide, flat bottomed pan with relatively tall, vertical sides. Great for one pan meals.</p></div><br/>  
+					 	<div style="height:200px;width:200px;font-size:28px;" id="db3" value="2" class="draggerbay"
 				     		ondrop="return dropDragger( event )"
 				     		ondragover="return false"
-				     		ondragenter="return enterDragger( event )"><p>A deep pot that is typically used for making soups, stock, chili, etc. </p></div><br/> 
-					 	<div style="height:200px;width:200px;font-size:21px;" id="db4" value="3" class="draggerbay"
+				     		ondragenter="return enterDragger( event )"><p style="font-size:24px;">A deep pot that is typically used for making soups, stock, chili, etc. </p></div><br/> 
+					 	<div style="height:200px;width:200px;font-size:28px;" id="db4" value="3" class="draggerbay"
 				     		ondrop="return dropDragger( event )"
 				     		ondragover="return false"
-				     		ondragenter="return enterDragger( event )"><p>Basically a fancy name for a frying pan, and is used for frying foods.</p></div><br/>  
+				     		ondragenter="return enterDragger( event )"><p style="font-size:24px;">Basically a fancy name for a frying pan, and is used for frying foods.</p></div><br/>  
 				</div>
 				<p id="response">&nbsp;</p>
 				<input type="submit" name="button" value="Submit Your Answer"/><br/>
 				</form>
 				</div>
-		
+			<div class="container">
+		<div class="btn-group btn-group-justified" >
+  		<div class="col-sm-12">
+		<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#transcript">Audio Transcript</button>
+  			<div id="transcript" class="collapse">
+  			<p>Activity Intructions</p>
+  			</div>
+  			</div>
+  			</div>
+  			</div>
 		<div class="container" id="content-tools">
 					<div class="row">
 					<div class="btn-group btn-group-justified" >

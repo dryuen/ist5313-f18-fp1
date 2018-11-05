@@ -27,6 +27,7 @@
 .dragger p
 {
 	font-weight: bold;
+	font-size:21px;
 }
 
 .draggerbay
@@ -36,6 +37,7 @@
 	width: 150px;
 	text-align: center;
 	background: #ccccee;
+	
 }
 
 [draggable=true] 

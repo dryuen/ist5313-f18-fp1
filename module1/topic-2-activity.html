@@ -7,9 +7,9 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 		<link href="styles/ist5313fpt.css" rel="stylesheet" type="text/css"/>
 		<link href="styles/drag-and-drop.css" rel="stylesheet" type="text/css"/>
-		<script src="scripts/drag-and-drop.js"></script>
-	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="scripts/drag-and-drop.js"></script>
 	</head>	
 	<body>
 		<div id="header" class="container">
@@ -60,43 +60,52 @@
 						<h3>Cup</h3>
 					 	<div style="height:250px;width:400px;font-size:21px;" id="d1" value="3" class="dragger" draggable="true"
 				     		ondragstart="return startDrag( event )"
-				     		ondragend="return endDrag( event )"><p><img src="images/one-cup.jpg" title="Cup of Rice" alt="Rice" style="max-height:200px;max-width:400px;">Rice</p></div><br/>  
+				     		ondragend="return endDrag( event )"><p><img src="images/one-cup.jpg" title="Cup of Rice" alt="Rice" style="max-height:200px;max-width:400px;"><br/>Rice</p></div><br/>  
 				     	<div style="height:250px;width:400px;font-size:21px;" id="d2" value="2" class="dragger" draggable="true"
 				     		ondragstart="return startDrag( event )"
-				     		ondragend="return endDrag( event )"><p><img src="images/onefourth-cup.jpg" title="Cup of White Chocolate" alt="White Chocolate" style="max-height:200px;max-width:400px;">White Chocolate Chips</p></div><br/>                        
+				     		ondragend="return endDrag( event )"><p><img src="images/onefourth-cup.jpg" title="Cup of White Chocolate" alt="White Chocolate" style="max-height:200px;max-width:400px;"><br/>White Chocolate Chips</p></div><br/>                        
 				 		<div style="height:250px;width:400px;font-size:21px;" id="d3" value="0" class="dragger" draggable="true"
 				     		ondragstart="return startDrag( event )"
-				     		ondragend="return endDrag( event )"><p><img src="images/onethird-cup.jpg" title="Cup of Melts" alt="White Chocolate Melts" style="max-height:200px;max-width:400px;">White Chocolate Melts</p></div><br/>  
+				     		ondragend="return endDrag( event )"><p><img src="images/onethird-cup.jpg" title="Cup of Melts" alt="White Chocolate Melts" style="max-height:200px;max-width:400px;"><br/>White Chocolate Melts</p></div><br/>  
 					 	<div style="height:250px;width:400px;font-size:21px;" id="d4" value="1" class="dragger" draggable="true"
 				     		ondragstart="return startDrag( event )"
-				     		ondragend="return endDrag( event )"><p><img src="images/onehalf-cup.jpg" title="Cup of Flour" alt="Flour" style="max-height:200px;max-width:400px;">Flour</p></div><br/>  
+				     		ondragend="return endDrag( event )"><p><img src="images/onehalf-cup.jpg" title="Cup of Flour" alt="Flour" style="max-height:200px;max-width:400px;"><br/>Flour</p></div><br/>  
 				</div>
 				
 				    
 				<div class="column">
 						<h3>Size</h3>
-				     	<div style="height:250px;width:400px;font-size:28px;" id="db1" value="0" class="draggerbay" 
+				     	<div style="height:250px;width:400px;" id="db1" value="0" class="draggerbay" 
 				     		ondrop="return dropDragger( event )"
 				     		ondragover="return false"
-				     		ondragenter="return enterDragger( event )"><p>1/3 Cup</p></div><br/>                        
-				 		<div style="height:250px;width:400px;font-size:28px;" id="db2" value="1" class="draggerbay"
+				     		ondragenter="return enterDragger( event )"><p style="font-size:28px;">1/3 Cup</p></div><br/>                        
+				 		<div style="height:250px;width:400px;" id="db2" value="1" class="draggerbay"
 				     		ondrop="return dropDragger( event )"
 				     		ondragover="return false"
-				     		ondragenter="return enterDragger( event )"><p>1/2 Cup</p></div><br/>  
-					 	<div style="height:250px;width:400px;font-size:28px;" id="db3" value="2" class="draggerbay"
+				     		ondragenter="return enterDragger( event )"><p style="font-size:28px;">1/2 Cup</p></div><br/>  
+					 	<div style="height:250px;width:400px;" id="db3" value="2" class="draggerbay"
 				     		ondrop="return dropDragger( event )"
 				     		ondragover="return false"
-				     		ondragenter="return enterDragger( event )"><p>1/4 Cup</p></div><br/> 
-					 	<div style="height:250px;width:400px;font-size:28px;" id="db4" value="3" class="draggerbay"
+				     		ondragenter="return enterDragger( event )"><p style="font-size:28px;">1/4 Cup</p></div><br/> 
+					 	<div style="height:250px;width:400px;" id="db4" value="3" class="draggerbay"
 				     		ondrop="return dropDragger( event )"
 				     		ondragover="return false"
-				     		ondragenter="return enterDragger( event )"><p>One Cup</p></div><br/>  
+				     		ondragenter="return enterDragger( event )"><p style="font-size:28px;">One Cup</p></div><br/>  
 				</div>
 				<p id="response">&nbsp;</p>
 				<input type="submit" name="button" value="Submit Your Answer"/><br/>
 				</form>
 				</div>
-		
+			<div class="container">
+		<div class="btn-group btn-group-justified" >
+  		<div class="col-sm-12">
+		<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#transcript">Audio Transcript</button>
+  			<div id="transcript" class="collapse">
+  			<p>Activity Intructions</p>
+  			</div>
+  			</div>
+  			</div>
+  			</div>
 		<div class="container" id="content-tools">
 					<div class="row">
 					<div class="btn-group btn-group-justified" >
@@ -104,7 +113,7 @@
 				</div>
 				</div>
 			</div>
-		
+	
 	</body>
 </html>	
 
