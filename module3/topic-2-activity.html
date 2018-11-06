@@ -8,6 +8,7 @@
 		<link href="styles/ist5313fpt.css" rel="stylesheet" type="text/css"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="scripts/quiz.js"></script>
 		</head>	
 	<body>
 		<div id="header" class="container">
@@ -58,41 +59,50 @@
 				</header>
 			<form action="/action_page.php">				
 			<div class="col-md-12" style="font-size:18px;font:Ariel;">
-			<form id="activity1" name="activity1" action="javascript:processActivity(); return false;">
-			<label for="question1">⅛ cup  is the same as what?</label>
-			<label class="radio-inline"><input type="radio" name="One Tbsp">1 Tablespoon</label>
-			<label class="radio-inline"><input type="radio" name="One tsp">1 Teaspoon</label>
-			<label class="radio-inline"><input type="radio" name="One oz">1 Ounce</label>
+			<form id="activity1" name="activity1" action="javascript:processActivity(); return false;"><br/><br/>
+			<label for="question1">⅛ cup  is the same as what?</label><br/><br/>
+			<label class="radio-inline"><input type="radio" id="question1" name="question1" value="0">1 Tablespoon</label>
+			<label class="radio-inline"><input type="radio" id="question1" name="question1" value="1">1 Teaspoon</label>
+			<label class="radio-inline"><input type="radio" id="question1" name="question1" value="2">1 Ounce</label><br/><br/>
       			
-      		<label for="question2">½ cup is the same as what?</label>
-			<label class="radio-inline"><input type="radio" name="Eight Tbsp">8 Tablespoons</label>
-			<label class="radio-inline"><input type="radio" name="Four tsp">4 Teaspoons</label>
-			<label class="radio-inline"><input type="radio" name="Two oz">2 Ounces</label>
+      		<label for="question2">½ cup is the same as what?</label><br/><br/>
+			<label class="radio-inline"><input type="radio" id="question2" name="question2" value="0">8 Tablespoons</label>
+			<label class="radio-inline"><input type="radio" id="question2" name="question2" value="1">4 Teaspoons</label>
+			<label class="radio-inline"><input type="radio" id="question2" name="question2" value="2">2 Ounces</label><br/><br/>
       			
-			<label for="question3">1 cup is the same as what?</label>
-			<label class="radio-inline"><input type="radio" name="Six oz">6 Ounces</label>
-			<label class="radio-inline"><input type="radio" name="One-half pint">1/2 Pint</label>
-			<label class="radio-inline"><input type="radio" name="Thirty tsp">30 Teaspoons</label>
+			<label for="question3">1 cup is the same as what?</label><br/><br/>
+			<label class="radio-inline"><input type="radio" id="question3" name="question3" value="0">6 Ounces</label>
+			<label class="radio-inline"><input type="radio" id="question3" name="question3" value="1">1/2 Pint</label>
+			<label class="radio-inline"><input type="radio" id="question3" name="question3" value="2">30 Teaspoons</label><br/><br/>
       			
-      		<label for="question4">4 cups ia equal to  what?</label>
-			<label class="radio-inline"><input type="radio" name="One Quart">1 Quart</label>
-			<label class="radio-inline"><input type="radio" name="Twenty Eight oz">28 Ounces</label>
-			<label class="radio-inline"><input type="radio" name="One-half Gallon">1/2 Gallon</label>
+      		<label for="question4">4 cups ia equal to  what?</label><br/><br/>
+			<label class="radio-inline"><input type="radio" id="question4" name="question4" value="0">1 Quart</label>
+			<label class="radio-inline"><input type="radio" id="question4" name="question4" value="1">28 Ounces</label>
+			<label class="radio-inline"><input type="radio" id="question4" name="question4" value="2">1/2 Gallon</label><br/><br/>
       		
-      		<label for="question5">8 cups is the equivilent of what?</label>
-			<label class="radio-inline"><input type="radio" name="Thirty-two oz">32 Ounces</label>
-			<label class="radio-inline"><input type="radio" name="One-half Gallon">1/2 Gallon</label>
-			<label class="radio-inline"><input type="radio" name="Five Pints">5 Pints</label>
+      		<label for="question5">8 cups is the equivilent of what?</label><br/><br/>
+			<label class="radio-inline"><input type="radio" id="question5" name="question5" value="0">32 Ounces</label>
+			<label class="radio-inline"><input type="radio" id="question5" name="question5" value="1">1/2 Gallon</label>
+			<label class="radio-inline"><input type="radio" id="question5" name="question5" value="2">5 Pints</label><br/><br/>
       			
-      		<label for="question6">1 Gallon equals what?</label>
-			<label class="radio-inline"><input type="radio" name="Sixty-four oz.">64 Ounces</label>
-			<label class="radio-inline"><input type="radio" name="Six Pints">6 Pints</label>
-			<label class="radio-inline"><input type="radio" name="Four Quarts">4 Quarts</label>
+      		<label for="question6">1 Gallon equals what?</label><br/><br/>
+			<label class="radio-inline"><input type="radio" id="question6" name="question6" value="0">64 Ounces</label>
+			<label class="radio-inline"><input type="radio" id="question6" name="question6" value="1">6 Pints</label>
+			<label class="radio-inline"><input type="radio" id="question6" name="question6" value="2">4 Quarts</label><br/><br/>
       			
-      			 <input type="submit" data-inline="true" value="Submit">
+      			 <input type="submit" data-inline="true" value="Submit"><br/><br/>
 			</div>
 			</form>
-		</div>		
+		</div>	
+		
+			<div class="container">
+  			<div class="col-sm-12">
+  			<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#transcript">Activity Instructions</button>
+  			<div id="transcript" class="collapse">
+    			<p>Audio transcript goes here</p>
+    			</div>
+  			</div>
+			</div>	
 				<div class="container" id="content-tools">
 					<div class="row">
 					<div class="btn-group btn-group-justified" >
