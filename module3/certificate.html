@@ -52,13 +52,13 @@
        <br><br>
        <span style="font-size:25px"><i>This is to certify that</i></span>
        <br><br>
-       <span style="font-size:30px">
-       <form class="form-inline">Name<input type="text" class="form-control"name="name"></form>
-       </span><br/><br/>
+       <span style="font-size:30px"><b>$student.getFullName()</b></span><br/><br/>
        <span style="font-size:25px"><i>has completed the course</i></span> <br/><br/>
-       <span style="font-size:30px">Introduction to Baking</span> <br/><br/>
-       <br/>
-       <span style="font-size:25px"><form>Completed<input type="text" name="date"></form></span><br/><br/>  
+       <span style="font-size:30px">$course.getName()</span> <br/><br/>
+       <span style="font-size:20px">with score of <b>$grade.getPoints()%</b></span> <br/><br/><br/><br/>
+       <span style="font-size:25px"><i>dated</i></span><br>
+      #set ($dt = $DateFormatter.getFormattedDate($grade.getAwardDate(), "MMMM dd, yyyy"))
+      <span style="font-size:30px">$dt</span>    
       </div>
 	</div>
 		<div class="container">
