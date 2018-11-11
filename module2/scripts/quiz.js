@@ -50,7 +50,8 @@ function processQuiz()
 	
 	alert( "You got " + counter + " questions correct!" );
 	
-	var percentage = counter / 7;
-	alert( "Your score is " + percentage + "%" );
+	var percentage = counter / 7 * 100;
+	var a = Math.round(percentage);
+	alert( "Your score is " + a + "%" );
 }
 

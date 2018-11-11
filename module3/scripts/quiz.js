@@ -26,65 +26,19 @@ function processQuiz()
 		counter = counter + 1;
 	}
 	
-	if( answer3 == 1 )
+	if( answer4 == 1 )
 	{
 		counter = counter + 1;
 	}
 	
-	if( answer3 == 2 )
-	{
-		counter = counter + 1;
-	}
-	
-	alert( "You got " + counter + " questions correct!" );
-	
-	var percentage = counter / 5;
-	alert( "Your score is " + percentage + "%" );
-}
-
-function processActivity()
-{
-	var answer1 = document.forms.activity1.question1.value;
-	var answer2 = document.forms.activity1.question2.value;
-	var answer3 = document.forms.activity1.question3.value;
-	var answer4 = document.forms.activity1.question4.value;
-	var answer5 = document.forms.activity1.question5.value;
-	var answer6 = document.forms.activity1.question6.value;
-
-	var counter = 0;		// This variable keeps track of the number of correct answers
-	
-	if( answer1 == 2 )
-	{
-		counter = counter + 1;
-	}
-	
-	if( answer2 == 0 )
-	{
-		counter = counter + 1;
-	}
-	
-	if( answer3 == 1 )
-	{
-		counter = counter + 1;
-	}
-	
-	if( answer4 == 0 )
-	{
-		counter = counter + 1;
-	}
-	
-	if( answer5 == 1 )
-	{
-		counter = counter + 1;
-	}
-	
-	if( answer6 == 2 )
+	if( answer5 == 2 )
 	{
 		counter = counter + 1;
 	}
 	
 	alert( "You got " + counter + " questions correct!" );
 	
-	var percentage = counter / 6;
-	alert( "Your score is " + percentage + "%" );
+	var percentage = counter / 5 * 100;
+	var a = Math.round(percentage);
+	alert( "Your score is " + a + "%" );
 }
