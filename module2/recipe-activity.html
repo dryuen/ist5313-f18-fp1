@@ -21,14 +21,12 @@
 				</div>
 			</div>
 				<br/>
-		<div id="main-layout">
-			
+		<div id="main-layout">			
 				<nav class="navbar navbar-default">
 					<div class="container-fluid">
 					<div class="collapse navbar-collapse" id= "myNavbar">
 					<a class="navbar-brand" href="#" style="font-size:21px;">What Every Beginner Chef Needs to Learn: Meal Preparation</a>
-					</div>
-					
+					</div>					
 					<ul class="nav navbar-nav" id="cards">
 						<li id="first"><a href="topic-1.html">Meal Prep</a></li>
 						<li id="second"><a href="topic-2.html">Food Safety</a></li>
@@ -43,73 +41,88 @@
 						<li id="eleventh"><a href="topic-5a.html">Recipes Cards </a>
 						<li id="twelvth"><a href="recipe-activity.html">Recipe Activity</a></li>
 						<li id="thirteenth"><a href="quiz.html">Quiz</a></li>
-						<li id="fourteenth"><a href="certificate.html">Certificate</a></li>
-						
+						<li id="fourteenth"><a href="certificate.html">Certificate</a></li>						
 						</ul>
 					</div>
 				</nav>
 			</div>
 		<body>
-					<div id="content">
+				<div id="content">
             	<h1>Recipe Activity</h1>
             <div class="container">
+            <div class= "col-med-12">  			
+  			<h2 style="text-align:center;">Build Your Own Stir Fry</h2>
+  			<img src="images/stirfry-meat.jpg" title="Stir Fry Meat" alt="Stir Fry Meat" style="max-width:200px;max-height:300px;">
+  			<img src="images/vegetables.jpg" title="Stir Fry Vegetables" alt="Stir Fry Vegatables" style="max-width:200px;max-height:300px;float:left">
+  			<img src="images/zuccs.jpg" title="Stir Fry" alt="Stir Fry" style="max-width:200px;max-height:300px; float:left">
+  			 </div>
+  			 </div>
+  			 <div class="container-fluid">
             <div class= "col-med-6">
-  			 <form class="form-inline" action="javascript:createList()">
+            <form>
  			 <div class="form-group">
-  			<h2>Build your own Stir Fry</h2>
-  			<img src="images/stirfry-meat.jpg" title="Stir Fry Meat" alt="Stir Fry Meat" style="max-width:200px;max-height:200px;">
-  			<img src="images/vegetables.jpg" title="Stir Fry Vegetables" alt="Stir Fry Vegatables" style="max-width:200px;max-height:200px;float:right">
-  			<img src="images/zuccs.jpg" title="Stir Fry" alt="Stir Fry" style="max-width:200px;max-height:200px; float:right">
   			<ol>
-  			<li><label for="sel1" style="font-size:21px;">Select the Meat</label></li>
-  		<select class="form-control" id="sel1">
+  		<li><label for="sel1" style="font-size:21px;"  onselect="newList()">Select the Meat</label></li>
+  		<select class="form-control" id="sel1" size="1" multiple style="width:200px;font-size:18px;">
    		 <option>Chicken Strips</option>
    		 <option>Beef Strips</option>
    		 <option>Polish Sausage</option>
     	 <option>Shrimp</option>
- 		 </select>
- 		 
- 		 <li><label for="sel2" style="font-size:21px;">Select a Vegetable</label></li>
-  		<select class="form-control" id="sel2">
+ 		 </select> 		 
+ 		 <li><label for="sel2" style="font-size:21px;"  onselect="newList()">Select a Vegetable</label></li>
+  		<select class="form-control" id="sel2" size="1" multiple style="width:200px;font-size:18px;">
    		 <option>Yellow Squash</option>
    		 <option>Zucchini</option>
    		 <option>Red Pepper</option>
     	 <option>Green Pepper</option>
- 		 </select>
- 		 
- 		<li><label for="sel3" style="font-size:21px;">Select a Vegetable</label></li>
-  		<select class="form-control" id="sel3">
+ 		 </select> 		 
+ 		<li><label for="sel3" style="font-size:21px;"  onselect="newList()">Select a Vegetable</label></li>
+  		<select class="form-control" id="sel3" size="1"  multiple style="width:200px;font-size:18px;">
    		 <option>Yellow Onion</option>
    		 <option>Red Onion</option>
    		 <option>Green Onion</option>
     	 <option>Mushroom</option>
- 		 </select>
- 		 
- 		 <li><label for="sel4" style="font-size:21px;">Select a Vegetable</label></li>
-  		<select class="form-control" id="sel4">
+ 		 </select> 		 
+ 		 <li><label for="sel4" style="font-size:21px;"  onselect="newList()">Select a Vegetable</label></li>
+  		<select class="form-control" id="sel4" size="1" multiple style="width:200px;font-size:18px;">
    		 <option>Snow Peas</option>
    		 <option>Green Beans</option>
    		 <option>Roma Tomatoes</option>
     	 <option>Black Olives</option>
- 		 </select>
- 		 
- 		<li> <label for="sel5" style="font-size:21px;">Select the Starch</label></li>
-  		<select class="form-control" id="sel5">
+ 		 </select> 		 
+ 		<li> <label for="sel5" style="font-size:21px;"  onselect="newList()">Select the Starch</label></li>
+  		<select class="form-control" id="sel5" size="1" multiple style="width:200px;font-size:18px;">
    		 <option>Linguini</option>
    		 <option>Rice Noodles</option>
    		 <option>White Rice</option>
     	 <option>Couscous</option>
  		 </select>
- 		 
  		 </ol>
 		</div>
+		</div>
 		</form>
+		<div class="col-med-6">		
+		<h2>Selections</h2>
+		<ul  style="list-style-type:none">
+		</ul>
 		</div>
 		</div>
 		</div>
-		<div class="container">
-		<div class="col-med-6">
 		
+			
+		<script>
+		document.getElementById("sel1").onselect=function"newList()"
+		document.getElementById("sel2").onselect=function"newList()"
+		document.getElementById("sel3").onselect=function"newList()"
+		document.getElementById("sel4").onselect=function"newList()"
+		document.getElementById("sel5").onselect=function"newList()"
+		function newList(){
+			
+		}
+		</script>
+		
+		<div class="container">
+		<div class="col-med-12">
 		<form>
          <p style="font-size:24px">Cook meat in a frying pan until it is the correct internal temperature. Cook starch until al dente. Saute vegetables until they are the desired consistency. Have diners choose the items they want in their dish and throw the starch in a heated pan. Add the vegetables and meat and toss with the desired sauce until warm. Serve in a bowl.</p>		
 		</form>

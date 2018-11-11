@@ -74,15 +74,15 @@
 		<p style="font-size:15px"> Add the items you need to your list</p>
 		</div>
 		
-		<div class= "col-md-6">
+		<div class= "col-md-6" id="grocery-list">
 		<h2>Grocery List</h2>
 	
 	
 		<p id="newItem">Add a New Item:</p>
-		<form action=" action="javascript:createNewList()">
-			<input type="text" name="itemName" id="itemName" value="Item Name"/>
-			<input type="text" name="itemAmount" id="itemAmount" value="Item Amount"/>
-			<select>
+		<form >
+			<input class="name" type="text" name="itemName" id="itemName" value="Item Name"/>
+			<input class="amount" type="text" name="itemAmount" id="itemAmount" value="Item Amount"/>
+			<select class="catagory">
 				<option value="Other">Other</option>
   				<option value="Vegetables">Vegetables</option>
 				<option value="Fruits">Fruits</option>
@@ -95,7 +95,7 @@
 				<option value="Frozen">Frozen</option>
 				<option value="Household">Household</option>
 			</select> 
-			<input type="button" value="add" id="addButton" onClick="" name="add"/>
+			<input type="button" value="add" id="addButton" onClick="groceryList()"name="add"/>
 		<ul id="list">
 		</ul>
 		</form>
