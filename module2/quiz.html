@@ -58,7 +58,7 @@
 		</header>
 		
 		<section style="font-size:18px;">
-			<form id="quiz1" name="quiz1" action="javascript:processQuiz(); return false;">
+			<form id="quiz1" name="quiz1" action="javascript:processQuiz();">
 				<label for="question1">1. When cutting different food items you should…	</label>
 				<br/>
 				<input type="radio" id="question1" name="question1" value="0" required/>
@@ -70,7 +70,7 @@
 				
 				<label for="question2">2. What temperature should your refrigerator be set to?</label>
 				<br/>
-				<input type="radio" id="question2" name="question2" value="0"/>
+				<input type="radio" id="question2" name="question2" value="0" required/>
 				Above 40 degrees fahrenheit<br/>
 				<input type="radio" id="question2" name="question2" value="1"/>
 				Below 0 degrees fahrenheit<br/>
@@ -79,7 +79,7 @@
 				
 				<label for="question3">3. What is NOT a benefit of meal planning?</label>
 				<br/>
-				<input type="radio" id="question3" name="question3" value="0"/>
+				<input type="radio" id="question3" name="question3" value="0" required/>
 				Saving Time<br/>
 				<input type="radio" id="question3" name="question3" value="1"/>
 				Eating out whenever<br/>
@@ -88,7 +88,7 @@
 				
 				<label for="question4">4. What is most important to do when going to the grocery store?</label>
 				<br/>
-				<input type="radio" id="question4" name="question4" value="0"/>
+				<input type="radio" id="question4" name="question4" value="0" required/>
 				Go hungry<br/>
 				<input type="radio" id="question4" name="question4" value="1"/>
 				Go on a Tuesday<br/>
@@ -97,7 +97,7 @@
 				
 				<label for="question3">5. Which type of stovetop will heat right away?</label>
 				<br/>
-				<input type="radio" id="question5" name="question5" value="0"/>
+				<input type="radio" id="question5" name="question5" value="0" required/>
 				Gas<br/>
 				<input type="radio" id="question5" name="question5" value="1"/>
 				Electric<br/>
@@ -106,7 +106,7 @@
 				
 				<label for="question3">6. What is the first thing you should do before using a recipe?</label>
 				<br/>
-				<input type="radio" id="question6" name="question6" value="0"/>
+				<input type="radio" id="question6" name="question6" value="0" required/>
 				Make sure you have all ingredients<br/>
 				<input type="radio" id="question6" name="question6" value="1"/>
 				Make sure you preheat the oven<br/>
@@ -115,14 +115,15 @@
 				
 				<label for="question3">7. Which “date” should you throw food out and not use?</label>
 				<br/>
-				<input type="radio" id="question7" name="question7" value="0"/>
+				<input type="radio" id="question7" name="question7" value="0" required/>
 				Use By Date<br/>
 				<input type="radio" id="question7" name="question7" value="1"/>
 				Sell By Date<br/>
 				<input type="radio" id="question7" name="question7" value="2"/>
 				Best By Date<br/><br/>
-				
+
 				<input type="submit" value="Submit Answers"/>
+				<br/><br/>
 			</form>
 		</section>
 				<div class="container">
