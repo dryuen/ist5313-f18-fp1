@@ -8,7 +8,7 @@
 		<link href="styles/ist5313fpt.css" rel="stylesheet" type="text/css"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script src="scripts/quiz.js"></script>
+		<script src="scripts/activity.js"></script>
 		</head>	
 	<body>
 		<div id="header" class="container">
@@ -59,38 +59,44 @@
 				</header>
 			<form action="/action_page.php">				
 			<div class="col-md-12" style="font-size:18px;font:Ariel;">
-			<form id="activity1" name="activity1" action="javascript:processActivity(); return false;"><br/><br/>
-			<label for="question1">⅛ cup  is the same as what?</label><br/><br/>
+			<form id="activity1" name="activity1" ><br/><br/>
+			<label for="question1" onselect="javascript:check1()">⅛ cup  is the same as what?</label><br/><br/>
 			<label class="radio-inline"><input type="radio" id="question1" name="question1" value="0">1 Tablespoon</label>
 			<label class="radio-inline"><input type="radio" id="question1" name="question1" value="1">1 Teaspoon</label>
-			<label class="radio-inline"><input type="radio" id="question1" name="question1" value="2">1 Ounce</label><br/><br/>
+			<label class="radio-inline"><input type="radio" id="question1" name="question1" value="2">1 Ounce</label><br/>
+			<button type="button" class="btn btn-success" id="q1Success" style="float:right;visibility:hidden">Great!</button><button type="button" class="btn btn-primary" id="q1Try" style="float:right;visibility:hidden">Try Again!</button><br/>
       			
-      		<label for="question2">½ cup is the same as what?</label><br/><br/>
+      		<label for="question2" onselect="javascript:check2()">½ cup is the same as what?</label><br/><br/>
 			<label class="radio-inline"><input type="radio" id="question2" name="question2" value="0">8 Tablespoons</label>
 			<label class="radio-inline"><input type="radio" id="question2" name="question2" value="1">4 Teaspoons</label>
-			<label class="radio-inline"><input type="radio" id="question2" name="question2" value="2">2 Ounces</label><br/><br/>
+			<label class="radio-inline"><input type="radio" id="question2" name="question2" value="2">2 Ounces</label><br/>
+			<button type="button" class="btn btn-success" id="q2Success" style="float:right;visibility:hidden">Great!</button><button type="button" class="btn btn-primary"id="q2Try"style="float:right;visibility:hidden">Try Again!</button><br/><br/>
       			
-			<label for="question3">1 cup is the same as what?</label><br/><br/>
+			<label for="question3" onselect="javascript:check3()">1 cup is the same as what?</label><br/><br/>
 			<label class="radio-inline"><input type="radio" id="question3" name="question3" value="0">6 Ounces</label>
 			<label class="radio-inline"><input type="radio" id="question3" name="question3" value="1">1/2 Pint</label>
-			<label class="radio-inline"><input type="radio" id="question3" name="question3" value="2">30 Teaspoons</label><br/><br/>
+			<label class="radio-inline"><input type="radio" id="question3" name="question3" value="2">30 Teaspoons</label><br/>
+			<button type="button" class="btn btn-success" id="q3Success" style="float:right;visibility:hidden">Great!</button><button type="button" class="btn btn-primary"id="q3Try"style="float:right;visibility:hidden">Try Again!</button><br/><br/>
       			
-      		<label for="question4">4 cups ia equal to  what?</label><br/><br/>
+      		<label for="question4" onselect="javascript:check4()">4 cups ia equal to  what?</label><br/><br/>
 			<label class="radio-inline"><input type="radio" id="question4" name="question4" value="0">1 Quart</label>
 			<label class="radio-inline"><input type="radio" id="question4" name="question4" value="1">28 Ounces</label>
-			<label class="radio-inline"><input type="radio" id="question4" name="question4" value="2">1/2 Gallon</label><br/><br/>
+			<label class="radio-inline"><input type="radio" id="question4" name="question4" value="2">1/2 Gallon</label><br/>
+			<button type="button" class="btn btn-success" id="q4Success" style="float:right;visibility:hidden">Great!</button><button type="button" class="btn btn-primary"id="q4Try"style="float:right;visibility:hidden">Try Again!</button><br/><br/>
       		
-      		<label for="question5">8 cups is the equivilent of what?</label><br/><br/>
+      		<label for="question5" onselect="javascript:check5()">8 cups is the equivilent of what?</label><br/><br/>
 			<label class="radio-inline"><input type="radio" id="question5" name="question5" value="0">32 Ounces</label>
 			<label class="radio-inline"><input type="radio" id="question5" name="question5" value="1">1/2 Gallon</label>
-			<label class="radio-inline"><input type="radio" id="question5" name="question5" value="2">5 Pints</label><br/><br/>
+			<label class="radio-inline"><input type="radio" id="question5" name="question5" value="2">5 Pints</label><br/>
+			<button type="button" class="btn btn-success" id="q5Success" style="float:right;visibility:hidden">Great!</button><button type="button" class="btn btn-primary"id="q5Try"style="float:right;visibility:hidden">Try Again!</button><br/><br/>
       			
-      		<label for="question6">1 Gallon equals what?</label><br/><br/>
+      		<label for="question6" onselect="javascript:check6()">1 Gallon equals what?</label><br/><br/>
 			<label class="radio-inline"><input type="radio" id="question6" name="question6" value="0">64 Ounces</label>
 			<label class="radio-inline"><input type="radio" id="question6" name="question6" value="1">6 Pints</label>
-			<label class="radio-inline"><input type="radio" id="question6" name="question6" value="2">4 Quarts</label><br/><br/>
+			<label class="radio-inline"><input type="radio" id="question6" name="question6" value="2">4 Quarts</label><br/>
+			<button type="button" class="btn btn-success" id="q6Success" style="float:right;visibility:hidden">Great!</button><button type="button" class="btn btn-primary"id="q6Try"style="float:right;visibility:hidden">Try Again!</button><br/><br/>
       			
-      			 <input type="submit" data-inline="true" value="Submit"><br/><br/>
+      			
 			</div>
 			</form>
 		</div>	
