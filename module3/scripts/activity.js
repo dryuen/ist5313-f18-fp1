@@ -1,4 +1,4 @@
-	var answer1 = document.forms.activity1.question1.value;
+/*	var answer1 = document.forms.activity1.question1.value;
 	var answer2 = document.forms.activity1.question2.value;
 	var answer3 = document.forms.activity1.question3.value;
 	var answer4 = document.forms.activity1.question4.value;
@@ -64,4 +64,13 @@ function check6(){
 	if else{
 		document.getElementByID("q6Try").style.visibility="visible";
 	}
-}
+}*/
+$( "input[type=radio][name=question1]" ).on( "change", function() 
+	{
+
+	document.getElementById("q1successA").style.visibility="visible";
+});
+
+
+
+
