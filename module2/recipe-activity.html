@@ -3,11 +3,12 @@
 	<head>
 		<meta charset="utf-8"/>
 		<title>Intro to Meal Preparation</title>
-		<meta name="viewport" content="width=device-width, initial-scale-1"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 		<link href="styles/ist5313fpt.css" rel="stylesheet" type="text/css"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 	</head>		
 	<body>
 		<div id="header" class="container">
@@ -103,7 +104,7 @@
 		</form>
 		<div class="col-med-6">		
 		<h2>Selections</h2>
-		<ul  style="list-style-type:none">
+		<ul  style="list-style-type:none" id="selections-list">
 		</ul>
 		</div>
 		</div>
@@ -111,6 +112,8 @@
 		
 			
 		<script>
+		/*
+		// something is causing problems here, so I commented it out --tty
 		document.getElementById("sel1").onselect=function"newList()"
 		document.getElementById("sel2").onselect=function"newList()"
 		document.getElementById("sel3").onselect=function"newList()"
@@ -118,9 +121,9 @@
 		document.getElementById("sel5").onselect=function"newList()"
 		function newList(){
 			
-		}
+		}*/
 		</script>
-		
+				<script src="scripts/mod2-recipe-activity.js"></script>
 		<div class="container">
 		<div class="col-med-12">
 		<form>

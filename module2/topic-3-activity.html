@@ -3,12 +3,14 @@
 	<head>
 		<title>Introduction to Meal Preparation</title>
 		<meta charset="utf-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale-1"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 		<link href="styles/ist5313fpt.css" rel="stylesheet" type="text/css"/>
 		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		 <script src=scripts/form.js></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+				<script src="scripts/mod2-grocery-list-activity.js"></script>
 		</head>	
 	<body>
 		<div id="header" class="container">
@@ -76,13 +78,13 @@
 		
 		<div class= "col-md-6" id="grocery-list">
 		<h2>Grocery List</h2>
-	
+		<div id="my-grocery-list"></div>
 	
 		<p id="newItem">Add a New Item:</p>
 		<form >
 			<input class="name" type="text" name="itemName" id="itemName" value="Item Name"/>
 			<input class="amount" type="text" name="itemAmount" id="itemAmount" value="Item Amount"/>
-			<select class="catagory">
+			<select class="catagory" id="other-category">
 				<option value="Other">Other</option>
   				<option value="Vegetables">Vegetables</option>
 				<option value="Fruits">Fruits</option>
@@ -95,7 +97,7 @@
 				<option value="Frozen">Frozen</option>
 				<option value="Household">Household</option>
 			</select> 
-			<input type="button" value="add" id="addButton" onClick="groceryList()"name="add"/>
+			<input type="button" value="add" id="addButton" onClick="groceryList()" name="add"/>
 		<ul id="list">
 		</ul>
 		</form>
@@ -107,7 +109,7 @@
   		<div class="col-sm-12">
 		<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#transcript">Audio Transcript</button>
   			<div id="transcript" class="collapse">
-  			<p>Activity Intructions</p>
+  			<p>Activity Instructions</p>
   			</div>
   			</div>
   			</div>
