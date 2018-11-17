@@ -21,14 +21,12 @@
 				</div>
 			</div>
 				<br/>
-		<div id="main-layout">
-			
+		<div id="main-layout">			
 				<nav class="navbar navbar-default">
 					<div class="container-fluid">
 					<div class="collapse navbar-collapse" id= "myNavbar">
 					<a class="navbar-brand" href="#" style="font-size:21px;">What Every Beginner Chef Needs to Learn- Baking</a>
-					</div>
-					
+					</div>					
 					<ul class="nav navbar-nav" id="cards">
 						<li id="first"><a href="topic-1.html">Intro to Baking</a></li>
 						<li id="second"><a href="topic-2.html">Baking Fundamentals</a></li>
@@ -40,28 +38,27 @@
 						<li id="eighth"><a href="topic-5a.html">What's in the Pantry </a></li>
 						<li id="ninth"><a href="recipe-activity2.html">Recipe Activity</a></li>
 						<li id="tenth"><a href="hotspots.html">Baking Pan Activity</a></li>
-						<li id="eleventh"><a href="quiz.html">Quiz</a></li>
-						<li id="twelveth"><a href="certificate.html">Certificate</a></li>
+						<li id="eleventh" style="visibility:hidden"><a href="quiz.html">Quiz</a></li>
+						<li id="twelveth" style="visibility:hidden"><a href="certificate.html">Certificate</a></li>
 					</ul>
 					</div>
 				</nav>
 			</div>
 		<body>
 					<div id="content">
-            	    	<h1>Recipe Activity</h1>
-            <div class="container">
+            	    
+            <div class="container" style="padding-left: 280px";>
             <div class= "col-med-12">  			
-  			<h2 style="text-align:center;">Build Your Own Cookie</h2>
+  			<h2 style="text-align:left;">Build Your Own Cookie</h2>
   			<img src="images/flour-butter.jpg" title="Flour and Butter" alt="Flour and Butter" style="width:200px;height:200px;">
   			<img src="images/mixednuts.jpg" title="Nuts" alt="Nuts" style="width:200px;height:200px;float:left">
   			<img src="images/chocolate chips.jpg" title="Chocolate Chips" alt="Chocolate Chips" style="width:200px;height:200px; float:left">
   			 </div>
   			 </div>
-  			 <div class="container-fluid">
+  			 <div class="container-fluid" style="padding-left: 180px";>
             <div class= "col-med-6">
-  			 <form>
- 			 <div class="form-group">
-  			
+  			 <form onselect="newList()">
+ 			 <div class="form-group">  			
   			<ol>
   			<li><label for="sel1" style="font-size:21px;"  onselect="newList()">Select the Base</label></li>
   		<select multiple class="form-control" id="sel1" size="1" name="sellist1" style="width:200px;font-size:18px;">
@@ -69,8 +66,7 @@
    		 <option>Cinnamon</option>
    		 <option>Oatmeal</option>
     	 <option>Peanut Butter</option>
- 		 </select>
- 		 
+ 		 </select> 		 
  		 <li><label for="sel2" style="font-size:21px;"  onselect="newList()">Select a Mix-In</label></li>
   		<select multiple class="form-control" id="sel2" size="1" name="sellist2" style="width:200px;font-size:18px;">
    		 <option>White Chocolate</option>
@@ -95,10 +91,15 @@
  		 </ol>
 		</div>
 		</form>
-		
+		<div class="col-med-6" style="padding-left: 180px";>		
+		<h2>Selections</h2>
+		<ul  style="list-style-type:none;font-size:18px;" id="selections-list">
+		</ul>
+		</div>		
 		</div>
 		</div>
 		</div>
+		<script src="scripts/mod3-recipe-activity.js"></script>
 		<div class="container">
 		<div class="col-med-6">
 		<form>
@@ -112,12 +113,7 @@
 		<li>4 cups Gold Medal™ all-purpose flour</li>
 		<li>2 teaspoons baking soda</li>
 		<li>1 teaspoon salt </li>
-		</ul>
-			
-		<h2>Selections</h2>
-		<ul  style="list-style-type:none">
-		</ul>
-		
+		</ul>		
 <h3>Steps</h3>
 <ol style="font-size:18px;">
 <li>Heat oven to 350ºF. Mix butter, sugar, vanilla and eggs in large bowl using spoon. Stir in flour, baking soda and salt. Stir in chocolate chips.</li>
@@ -143,7 +139,6 @@
 					<a class="button" href="topic-5a.html">Previous</a> | <a class="button" href="hotspots.html">Next</a> | 
 				</div>
 				</div>
-			</div>
-		
+			</div>		
 	</body>
 </html>	
