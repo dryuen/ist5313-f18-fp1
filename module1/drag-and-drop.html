@@ -3,11 +3,10 @@
 	<head>
 		<meta charset="utf-8"/>
 		<title>Basic Cooking Equipment</title>
-		<meta name="viewport" content="width=device-width, initial-scale-1"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 		<link href="styles/ist5313fpt.css" rel="stylesheet" type="text/css"/>
-		<link href="styles/drag-and-drop.css" rel="stylesheet" type="text/css"/>
-		
+		<link href="styles/drag-and-drop.css" rel="stylesheet" type="text/css"/>		
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="scripts/drag-and-drop.js"></script>
@@ -30,8 +29,7 @@
 					<div class="container-fluid">
 					<div class="collapse navbar-collapse" id= "myNavbar">
 					<a class="navbar-brand" href="#" style="font-size:21px;">What Every Beginner Chef Needs to Learn: Module 1</a>
-					</div>
-					
+					</div>					
 					<ul class="nav navbar-nav" id="cards">
 						<li id="first"><a href="topic-1.html">Basic Equipment</a></li>
 						<li id="second"><a href="topic-2.html">Introduction to Measurement</a></li>
@@ -43,8 +41,8 @@
 						<li id="eighth"><a href="topic-4a.html">Types of Pans</a></li>
 						<li id="ninth"><a href="drag-and-drop.html">Pan Activity</a></li>
 						<li id="tenth"><a href="topic-4b.html">Matching Activity</a>
-						<li id="eleventh"><a href="quiz.html">Quiz</a></li>
-						<li id="twelvth"><a href="certificate.html">Certificate</a></li>
+						<li id="eleventh" style="visibility:hidden"><a href="quiz.html">Quiz</a></li>
+						<li id="twelvth" style="visibility:hidden"><a href="certificate.html">Certificate</a></li>
 						
 						</ul>
 					</div>
@@ -74,9 +72,9 @@
 				</div>
 				
 				    
-				<div class="column">
+				<div class="column" style="padding-left:200px";>
 						<h3>Purpose</h3>
-				     	<div style="height:200px;width:200px;" id="db1" value="0" class="draggerbay" 
+				     	<div  id="db1" value="0" class="draggerbay" style="height:200px;width:200px;"
 				     		ondrop="return dropDragger( event )"
 				     		ondragover="return false"
 				     		ondragenter="return enterDragger( event )"><p style="font-size:24px;">Used to cook gravies, sauces, etc.</p></div><br/>                        
