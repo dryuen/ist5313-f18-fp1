@@ -3,7 +3,7 @@
 	<head>
 		<title>Intro to Baking</title>
 		<meta charset="utf-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale-1"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 		<link href="styles/ist5313fpt.css" rel="stylesheet" type="text/css"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -22,14 +22,12 @@
 				</div>
 			</div>
 				<br/>
-		<div id="main-layout">
-			
+		<div id="main-layout">			
 				<nav class="navbar navbar-default">
 					<div class="container-fluid">
 					<div class="collapse navbar-collapse" id= "myNavbar">
 					<a class="navbar-brand" href="#" style="font-size:21px;">What Every Beginner Chef Needs to Learn- Baking</a>
-					</div>
-					
+					</div>					
 					<ul class="nav navbar-nav" id="cards">
 						<li id="first"><a href="topic-1.html">Intro to Baking</a></li>
 						<li id="second"><a href="topic-2.html">Baking Fundamentals</a></li>
@@ -42,7 +40,7 @@
 						<li id="ninth"><a href="recipe-activity2.html">Recipe Activity</a></li>
 						<li id="tenth"><a href="hotspots.html">Baking Pan Activity</a></li>
 						<li id="eleventh"><a href="quiz.html">Quiz</a></li>
-						<li id="twelveth"><a href="certificate.html">Certificate</a></li>
+						<li id="twelveth" style="visibility:hidden"><a href="certificate.html">Certificate</a></li>
 					</ul>
 					</div>
 				</nav>
@@ -52,8 +50,7 @@
 		<p>Select the correct answer for each question. There is only one correct answer
 		per question. Click the Submit Answers button when you have answered all 
 		the questions.</p>
-		</header>
-		
+		</header>		
 		<section style="font-size:18px;">
 			<form id="quiz1" name="quiz1" action="javascript:processQuiz();">
 				<label for="question1">1. Which oven cooks quicker?</label>
@@ -64,7 +61,7 @@
 				Electric<br/>
 				<input type="radio" id="question1" name="question1" value="2"/>
 				Gas<br/><br/>
-				
+								
 				<label for="question2">2. When doubling a recipe, you can double pretty much any ingredient except what?</label>
 				<br/>
 				<input type="radio" id="question2" name="question2" value="0"/>
@@ -72,8 +69,8 @@
 				<input type="radio" id="question2" name="question2" value="1"/>
 				Baking Powder/Baking Soda<br/>
 				<input type="radio" id="question2" name="question2" value="2"/>
-				Eggs<br/><br/>
-				
+				Eggs<br/><br/>	
+							
 				<label for="question3">3. Which type of pan is best for baking?</label>
 				<br/>
 				<input type="radio" id="question3" name="question3" value="0"/>
@@ -81,8 +78,8 @@
 				<input type="radio" id="question3" name="question3" value="1"/>
 				Ceramic<br/>
 				<input type="radio" id="question3" name="question3" value="2"/>
-				Metal<br/><br/>
-				
+				Metal<br/><br/>	
+							
 				<label for="question4">4. A recipe says to add 4 oz of chocolate, melted. What does that mean?</label>
 				<br/>
 				<input type="radio" id="question4" name="question4" value="0"/>
@@ -103,8 +100,7 @@
 				<input type="submit" value="Submit Answers"/>
 				<br/><br/>
 			</form>
-		</section>
-		
+		</section>		
 			<div class="container">
   			<div class="col-sm-12">
   			<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#transcript">Activity Instructions</button>
@@ -119,7 +115,6 @@
 					<a class="button" href="hotspots.html">Previous</a> | <a class="button" href="certificate.html">Next</a> | 
 				</div>
 				</div>
-			</div>
-		
+			</div>		
 	</body>
 </html>
