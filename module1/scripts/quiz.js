@@ -40,5 +40,16 @@ function processQuiz()
 	var percentage = counter / 5 * 100;
 	var a = Math.round(percentage);
 	alert( "Your score is " + a + "%" );
+	parent.reportScores ( score );
 }
 
+function reportScores ( score )
+{
+	oScorm.set("cmi.core.score.raw", score);
+	oScorm.set("cmi.core.score.min", 0);
+	oScorm.set("cmi.core.score.max", 100);
+	oScorm.set("cmi.core.lesson_status", "failed", score<70);
+	oScorm.set("cmi.core.lesson_status", "passed", score>70);
+	
+	oScorm.save();
+}
