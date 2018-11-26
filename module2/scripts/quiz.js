@@ -51,7 +51,8 @@ function processQuiz()
 	alert( "You got " + counter + " questions correct!" );
 	
 	var percentage = counter / 7 * 100;
-	var a = Math.round(percentage);
-	alert( "Your score is " + a + "%" );
+	var score = Math.round(percentage);
+	alert( "Your score is " + score + "%" );
+	parent.reportScores ( score );
 }
 
