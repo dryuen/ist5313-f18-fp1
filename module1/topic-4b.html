@@ -7,9 +7,9 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 		<link href="styles/ist5313fpt.css" rel="stylesheet" type="text/css"/>
 		<link href="styles/drag-and-drop.css" rel="stylesheet" type="text/css"/>
-		<script src="scripts/drag-and-drop.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	    <script src= "scripts/topic-4b.js"></script>
 	</head>		
 	<body>
 		<div id="header" class="container">
@@ -57,36 +57,36 @@
 				
 				<div class="column">
 						<h3>Knife</h3>
-					 	<div id="d1" value="3" class="dragger" draggable="true" style="height:200px;width:200px;"
+					 	<div id="d1" value="3" class="dragger" draggable="true" style="font-size:21px;"
 				     		ondragstart="return startDrag( event )"
-				     		ondragend="return endDrag( event )"><img src="images/tomatoknife.jpg" title="Tomato Knife" alt="Tomato Knife"/></div><br/>  
-				     	<div id="d2" value="2" class="dragger" draggable="true" style="height:200px;width:200px;"
+				     		ondragend="return endDrag( event )"><img src="images/tomatoknife.jpg" title="Tomato Knife" value="3" name="tomato" alt="Tomato Knife"draggable="true"/><p>Small Serrated</p></div><br/>  
+				     	<div id="d2" value="2" class="dragger" draggable="true" style="font-size:21px;"
 				     		ondragstart="return startDrag( event )"
-				     		ondragend="return endDrag( event )"><img src="images/chef.jpg" title="Chef Knife" alt="Chef Knife"/></div><br/>                        
-				 		<div id="d3" value="0" class="dragger" draggable="true" style="height:200px;width:200px;"
+				     		ondragend="return endDrag( event )"><img src="images/chef.jpg" title="Chef Knife" value="2" name="onion" alt="Chef Knife" draggable="true"/><p>Chef Knife</p></div><br/>                        
+				 		<div id="d3" value="0" class="dragger" draggable="true" style="font-size:21px;"
 				     		ondragstart="return startDrag( event )"
-				     		ondragend="return endDrag( event )"><img src="images/breadknife.jpg" title="Bread Knife" alt="Bread Knife"/></div><br/>  
-					 	<div id="d4" value="1" class="dragger" draggable="true" style="height:200px;width:200px;"
+				     		ondragend="return endDrag( event )"><img src="images/breadknife.jpg" title="Bread Knife" value="0" name="bread"  alt="Bread Knife" draggable="true"/><p>Large Serrated</p></div><br/>  
+					 	<div id="d4" value="1" class="dragger" draggable="true" style="font-size:21px;"
 				     		ondragstart="return startDrag( event )"
-				     		ondragend="return endDrag( event )"><img src="images/paring1.jpg" title="Paring Knife" alt="Paring Knife"/></div><br/>  
+				     		ondragend="return endDrag( event )"><img src="images/paring1.jpg" title="Paring Knife" value="1" name="strawberry" alt="Paring Knife" draggable="true"/><p>Paring Knife</p></div><br/>  
 				</div>
 				
 				    
 				<div class="column" style="padding-left:200px";>
 						<h3>Purpose</h3>
-				     	<div id="db1" value="0" class="draggerbay" style="height:200px;width:200px;font-size:21px;"
+				     	<div id="db1" value="0" class="draggerbay" style="font-size:21px;"
 				     		ondrop="return dropDragger( event )"
 				     		ondragover="return false"
 				     		ondragenter="return enterDragger( event )"><p><img src="images/bread.jpg" title="Image of Bread" alt="Bread" >Bread</p></div><br/>                        
-				 		<div id="db2" value="1" class="draggerbay" style="height:200px;width:200px;font-size:21px;"
+				 		<div id="db2" value="1" class="draggerbay" style="font-size:21px;"
 				     		ondrop="return dropDragger( event )"
 				     		ondragover="return false"
 				     		ondragenter="return enterDragger( event )"><p><img src="images/berry.jpg" title="Image of Strawberry" alt="Strawberry">Strawberry</p></div><br/>  
-					 	<div id="db3" value="2" class="draggerbay" style="height:200px;width:200px;font-size:21px;"
+					 	<div id="db3" value="2" class="draggerbay" style="font-size:21px;"
 				     		ondrop="return dropDragger( event )"
 				     		ondragover="return false"
 				     		ondragenter="return enterDragger( event )"><p><img src="images/bulb.jpg" title="Image of Onion" alt="Onion">Onion</p></div><br/> 
-					 	<div id="db4" value="3" class="draggerbay" style="height:200px;width:200px;font-size:21px;"
+					 	<div id="db4" value="3" class="draggerbay" style="font-size:21px;"
 				     		ondrop="return dropDragger( event )"
 				     		ondragover="return false"
 				     		ondragenter="return enterDragger( event )"><p><img src="images/tomato.jpg" title="Image of Tomato"  alt="tomato">Tomato</p></div><br/>  
@@ -102,7 +102,7 @@
 				<source src="audio/Module1MatchingActivityInstructions.mp3" type="audio/mpeg">
 				<source src="audio/Module1MatchingActivityInstructions.wav" type="audio/wav">
 				<source src="audio/Module1MatchingActivityInstructions.ogg"	type="audio/ogg">
-				></audio>
+				</audio>
 		<p><strong>Click play for instructions:</strong></p>
   		<div class="col-sm-12">
 		<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#transcript">Audio Transcript</button>

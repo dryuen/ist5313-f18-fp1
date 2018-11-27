@@ -9,7 +9,7 @@
 		<link href="styles/drag-and-drop.css" rel="stylesheet" type="text/css"/>		
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		
+		<script src="scripts/drag-and-drop.js"></script>
 	</head>		
 	<body>
 		<div id="header" class="container">
@@ -58,35 +58,35 @@
 				
 				<div class="column">
 						<h3>Pans</h3>
-					 	<div style="height:200px;width:200px;" id="d1" value="3" class="dragger" draggable="true"
+					 	<div  id="d1" value="3" class="dragger" draggable="true"
 				     		ondragstart="return startDrag( event )"
-				     		ondragend="return endDrag( event )"><p><img src="images/sunnyskillet.jpg" title="Image of Skillet" alt="skillet" >Skillet</p></div><br/>  
-				     	<div style="height:200px;width:200px;" id="d2" value="2" class="dragger" draggable="true"
+				     		ondragend="return endDrag( event )"><img src="images/sunnyskillet.jpg" title="Image of Skillet" value="3" name="frying" alt="skillet" ><p>Skillet</p></div><br/>  
+				     	<div id="d2" value="2" class="dragger" draggable="true"
 				     		ondragstart="return startDrag( event )"
-				     		ondragend="return endDrag( event )"><p><img src="images/stock.png" title="Image of Stockpot" alt="stockpot" >Stockpot</p></div><br/>                        
-				 		<div style="height:200px;width:200px;"id="d3" value="0" class="dragger" draggable="true"
+				     		ondragend="return endDrag( event )"><img src="images/stock.png" title="Image of Stockpot" value="2" name="soup" alt="stockpot" ><p>Stockpot</p></div><br/>                        
+				 		<div id="d3" value="0" class="dragger" draggable="true"
 				     		ondragstart="return startDrag( event )"
-				     		ondragend="return endDrag( event )"><p><img src="images/suacelid.jpg" title="Image of Saucepan" alt="saucepan" >Saucepan</p></div><br/>  
-					 	<div style="height:200px;width:200px;" id="d4" value="1" class="dragger" draggable="true"
+				     		ondragend="return endDrag( event )"><img src="images/suacelid.jpg" title="Image of Saucepan" value="0" name="gravies" alt="saucepan" ><p>Saucepan</p></div><br/>  
+					 	<div  id="d4" value="1" class="dragger" draggable="true"
 				     		ondragstart="return startDrag( event )"
-				     		ondragend="return endDrag( event )"><p><img src="images/saute1.png" title="Image of Sautepan" alt="Saute" >Saute</p></div><br/>  
+				     		ondragend="return endDrag( event )"><img src="images/saute1.png" title="Image of Sautepan" value="1" name="meals" alt="Saute" ><p>Saute</p></div><br/>  
 				</div>
 								    
 				<div class="column" style="padding-left:200px";>
 						<h3>Purpose</h3>
-				     	<div  id="db1" value="0" class="draggerbay" style="height:200px;width:200px;"
+				     	<div  id="db1" value="0" class="draggerbay" 
 				     		ondrop="return dropDragger( event )"
 				     		ondragover="return false"
 				     		ondragenter="return enterDragger( event )"><p style="font-size:24px;">Used to cook gravies, sauces, etc.</p></div><br/>                        
-				 		<div  id="db2" value="1" class="draggerbay" style="height:200px;width:200px;font-size:28px;"
+				 		<div  id="db2" value="1" class="draggerbay" 
 				     		ondrop="return dropDragger( event )"
 				     		ondragover="return false"
 				     		ondragenter="return enterDragger( event )"><p style="font-size:24px;"> A wide, flat bottomed pan with relatively tall, vertical sides. Great for one pan meals.</p></div><br/>  
-					 	<div id="db3" value="2" class="draggerbay" style="height:200px;width:200px;font-size:28px;"
+					 	<div id="db3" value="2" class="draggerbay" 
 				     		ondrop="return dropDragger( event )"
 				     		ondragover="return false"
 				     		ondragenter="return enterDragger( event )"><p style="font-size:24px;">A deep pot that is typically used for making soups, stock, chili, etc. </p></div><br/> 
-					 	<div id="db4" value="3" class="draggerbay" style="height:200px;width:200px;font-size:28px;"
+					 	<div id="db4" value="3" class="draggerbay" 
 				     		ondrop="return dropDragger( event )"
 				     		ondragover="return false"
 				     		ondragenter="return enterDragger( event )"><p style="font-size:24px;">Basically a fancy name for a frying pan, and is used for frying foods.</p></div><br/>  
@@ -95,7 +95,7 @@
 				<input type="submit" name="button" value="Submit Your Answer"/><br/>
 				</form>
 				</div>
-				<script src="scripts/drag-and-drop.js"></script>
+				
 			<div class="container">
 		<div class="btn-group btn-group-justified">
 		<audio controls autoplay>
