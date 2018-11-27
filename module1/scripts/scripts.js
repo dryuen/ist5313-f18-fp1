@@ -182,3 +182,8 @@ if (t1 == "visited" && t2 == "visited" && t2act == "visited" && t3 == "visited" 
 	{document.getElementById ("content-frame").contentWindow.document.getElementById("quiz-link").style.display="inline";
 	}
 }
+function visitCertificate()
+{
+	var learner_name=oScorm.get("cmi.core.student_name");
+	document.getElementById("content-frame").contentWindow.document.getElementById("user-name").innerHTML=learner_name;
+	}
