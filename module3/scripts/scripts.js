@@ -26,6 +26,7 @@ function startCourse()
     			sessionStorage.setItem( "course_started", "1" );
     			
 			// set the values you want to persist throughout the website here
+    			sessionStorage.setItem("topicVisited", "unvisited");
         }
 	}
 	
@@ -92,4 +93,92 @@ function finishCourse()
 {
 	oScorm.save();
 	oScorm.quit();
+}
+
+function visitTopic1()
+
+{
+
+ sessionStorage.setItem( "topic1Visited", "visited" );
+ checkAllVisited();
+}
+function visitTopic2()
+
+{
+
+ sessionStorage.setItem( "topic2Visited", "visited" );
+ checkAllVisited();
+}
+function visitTopic2activity()
+
+{
+
+ sessionStorage.setItem( "topic2activityVisited", "visited" );
+ checkAllVisited();
+}
+function visitTopic3()
+
+{
+
+ sessionStorage.setItem( "topic3Visited", "visited" );
+ checkAllVisited();
+}
+function visitTopic3activity()
+
+{
+
+ sessionStorage.setItem( "topic3activityVisited", "visited" );
+ checkAllVisited();
+}
+
+function visitTopic4()
+
+{
+
+ sessionStorage.setItem( "topic4Visited", "visited" );
+ checkAllVisited();
+}
+function visitTopic5()
+
+{
+
+ sessionStorage.setItem( "topic5Visited", "visited" );
+ checkAllVisited();
+}
+function visitTopic5a()
+
+{
+
+ sessionStorage.setItem( "topic5aVisited", "visited" );
+ checkAllVisited();
+}
+function visitRecipeActivity()
+
+{
+
+ sessionStorage.setItem( "recipeActivityVisited", "visited" );
+ checkAllVisited();
+}
+function visitHotspot()
+
+{
+
+ sessionStorage.setItem( "hotspotVisited", "visited" );
+ checkAllVisited();
+}
+function checkAllVisited()
+{
+	var t1= sessionStorage.getItem("topic1Visited");
+	var t2= sessionStorage.getItem("topic2Visited");
+	var t2act= sessionStorage.getItem("topic2activityVisited");
+	var t3= sessionStorage.getItem("topic3Visited");
+	var t3act= sessionStorage.getItem("topic3activityVisited");
+	var t4= sessionStorage.getItem("topic4Visited");
+	var t5= sessionStorage.getItem("topic5Visited");
+	var t5a= sessionStorage.getItem("topic5aVisited");
+	var ra= sessionStorage.getItem("recipeActivityVisited")
+	var hs= sessionStorage.getItem("hotspotVisited");
+if (t1 == "visited" && t2 == "visited" && t2act == "visited" && t3 == "visited" && t3act == "visited" && t4 == "visited" && t5 == "visited" && t5a == "visited" && ra == "visited" && hs == "visited")
+	{document.getElementById ("content-frame").contentWindow.document.getElementById("quiz-link").style.display="inline";
+	}
 }

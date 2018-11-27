@@ -26,6 +26,7 @@ function startCourse()
     			sessionStorage.setItem( "course_started", "1" );
     			
 			// set the values you want to persist throughout the website here
+    			sessionStorage.setItem("topicVisited", "unvisited");
         }
 	}
 	
@@ -93,4 +94,91 @@ function finishCourse()
 {
 	oScorm.save();
 	oScorm.quit();
+}
+
+function visitTopic1()
+
+{
+
+ sessionStorage.setItem( "topic1Visited", "visited" );
+ checkAllVisited();
+}
+function visitTopic2()
+
+{
+
+ sessionStorage.setItem( "topic2Visited", "visited" );
+ checkAllVisited();
+}
+function visitTopic2activity()
+
+{
+
+ sessionStorage.setItem( "topic2activityVisited", "visited" );
+ checkAllVisited();
+}
+function visitTopic3()
+
+{
+
+ sessionStorage.setItem( "topic3Visited", "visited" );
+ checkAllVisited();
+}
+function visitTopic3a()
+
+{
+
+ sessionStorage.setItem( "topic3aVisited", "visited" );
+ checkAllVisited();
+}
+function visitTopic3activity()
+
+{
+
+ sessionStorage.setItem( "topic3activityVisited", "visited" );
+ checkAllVisited();
+}
+function visitTopic4()
+
+{
+
+ sessionStorage.setItem( "topic4Visited", "visited" );
+ checkAllVisited();
+}
+function visitTopic4a()
+
+{
+
+ sessionStorage.setItem( "topic4aVisited", "visited" );
+ checkAllVisited();
+}
+function visitTopic4b()
+
+{
+
+ sessionStorage.setItem( "topic4bVisited", "visited" );
+ checkAllVisited();
+}
+function visitDrag-and-drop()
+
+{
+
+ sessionStorage.setItem( "drag-and-dropVisited", "visited" );
+ checkAllVisited();
+}
+function checkAllVisited()
+{
+	var t1= sessionStorage.getItem("topic1Visited");
+	var t2= sessionStorage.getItem("topic2Visited");
+	var t2act= sessionStorage.getItem("topic2activityVisited");
+	var t3= sessionStorage.getItem("topic3Visited");
+	var t3a= sessionStorage.getItem("topic3aVisited");
+	var t3act= sessionStorage.getItem("topic3activityVisited");
+	var t4= sessionStorage.getItem("topic4Visited");
+	var t4a= sessionStorage.getItem("topic4aVisited");
+	var t4b= sessionStorage.getItem("topic4bVisited");
+	var dad= sessionStorage.getItem("drag-and-dropVisited");
+if (t1 == "visited" && t2 == "visited" && t2act == "visited" && t3 == "visited" && t3a == "visited" && t3act == "visited" && t4 == "visited" && t4a == "visited" && t4b == "visited" && dad == "visited")
+	{document.getElementById ("content-frame").contentWindow.document.getElementById("quiz-link").style.display="inline";
+	}
 }
