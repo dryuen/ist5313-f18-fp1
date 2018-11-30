@@ -81,7 +81,7 @@ function reportScores ( score )
 			{
 				oScorm.set("cmi.core.lesson_status", "passed");
 			}
-		else (score<70)
+		else 
 		{
 			oScorm.set("cmi.core.lesson_status", "failed");
 		}
@@ -159,11 +159,11 @@ function visitTopic4b()
  sessionStorage.setItem( "topic4bVisited", "visited" );
  checkAllVisited();
 }
-function visitDrag-and-drop()
+function visitDragdrop()
 
 {
 
- sessionStorage.setItem( "drag-and-dropVisited", "visited" );
+ sessionStorage.setItem( "dragDropVisited", "visited" );
  checkAllVisited();
 }
 function checkAllVisited()
@@ -177,7 +177,7 @@ function checkAllVisited()
 	var t4= sessionStorage.getItem("topic4Visited");
 	var t4a= sessionStorage.getItem("topic4aVisited");
 	var t4b= sessionStorage.getItem("topic4bVisited");
-	var dad= sessionStorage.getItem("drag-and-dropVisited");
+	var dad= sessionStorage.getItem("dragDropVisited");
 if (t1 == "visited" && t2 == "visited" && t2act == "visited" && t3 == "visited" && t3a == "visited" && t3act == "visited" && t4 == "visited" && t4a == "visited" && t4b == "visited" && dad == "visited")
 	{document.getElementById ("content-frame").contentWindow.document.getElementById("quiz-link").style.display="inline";
 	}

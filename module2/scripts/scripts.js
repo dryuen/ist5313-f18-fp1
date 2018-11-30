@@ -80,7 +80,7 @@ function reportScores ( score )
 			{
 				oScorm.set("cmi.core.lesson_status", "passed");
 			}
-		else (score<70)
+		else 
 		{
 			oScorm.set("cmi.core.lesson_status", "failed");
 		}
