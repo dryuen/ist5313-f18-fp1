@@ -6,11 +6,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale-1"/>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 		<link href="styles/ist5313fpt.css" rel="stylesheet" type="text/css"/>
-		<link href="styles/drag-and-drop.css" rel="stylesheet" type="text/css"/>
+		<link href="styles/matching.css" rel="stylesheet" type="text/css"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	   <script src=scripts/scripts.js></script>
-	    <script src= "scripts/topic-4b.js"></script>
+	    
 	</head>		
 	<body onload="javascript:parent.visitTopic4b();">
 		<div id="header" class="container">
@@ -42,60 +42,72 @@
 						<li id="ninth"><a href="drag-and-drop.html">Pan Activity</a></li>
 						<li id="tenth"><a href="topic-4b.html">Matching Activity</a>
 						<li id="eleventh" style="visibility:hidden"><a href="quiz.html">Quiz</a></li>
-						<li id="twelvth" style="visibility:hidden"><a href="certificate.html">Certificate</a></li>
-						
+						<li id="twelvth" style="visibility:hidden"><a href="certificate.html">Certificate</a></li>						
 						</ul>
 					</div>
 				</nav>
 			</div>
 		<body>
-				<div id="content" align="center">
-				
+				<div id="content" align="center">				
             	<h1>Which Knife Do You Need?</h1>
-            
-         		<form name="dd1" onsubmit="javascript:processForm(); return false;">  
-				<p style="font-size:18px;">Match the correct knife with the item it can be best used to cut.</p>
-				
-				<div class="column">
-						<h3>Knife</h3>
-					 	<div id="d1" value="3" class="dragger" draggable="true" style="font-size:21px;"
-				     		ondragstart="return startDrag( event )"
-				     		ondragend="return endDrag( event )"><img src="images/tomatoknife.jpg" title="Tomato Knife" value="3" name="tomato" alt="Tomato Knife"draggable="true"/><p>Small Serrated</p></div><br/>  
-				     	<div id="d2" value="2" class="dragger" draggable="true" style="font-size:21px;"
-				     		ondragstart="return startDrag( event )"
-				     		ondragend="return endDrag( event )"><img src="images/chef.jpg" title="Chef Knife" value="2" name="onion" alt="Chef Knife" draggable="true"/><p>Chef Knife</p></div><br/>                        
-				 		<div id="d3" value="0" class="dragger" draggable="true" style="font-size:21px;"
-				     		ondragstart="return startDrag( event )"
-				     		ondragend="return endDrag( event )"><img src="images/breadknife.jpg" title="Bread Knife" value="0" name="bread"  alt="Bread Knife" draggable="true"/><p>Large Serrated</p></div><br/>  
-					 	<div id="d4" value="1" class="dragger" draggable="true" style="font-size:21px;"
-				     		ondragstart="return startDrag( event )"
-				     		ondragend="return endDrag( event )"><img src="images/paring1.jpg" title="Paring Knife" value="1" name="strawberry" alt="Paring Knife" draggable="true"/><p>Paring Knife</p></div><br/>  
+            	<h2> Click on the boxes to find the match.<br> Match the knife with the item it is best used to cut.</h2>
+            	<div class="game-box">
+         		<div class="container" id="memory_board">
+				<section class= "memory-game">
+				<div class="memory-card" data-framework="fruit">
+					<img class="front-face" src="images/berry.jpg" alt="Strawberry">
+					<img class="back-face" src="images/knives.jpg" alt="Knives">
 				</div>
-				
-				    
-				<div class="column" style="padding-left:200px";>
-						<h3>Purpose</h3>
-				     	<div id="db1" value="0" class="draggerbay" style="font-size:21px;"
-				     		ondrop="return dropDragger( event )"
-				     		ondragover="return false"
-				     		ondragenter="return enterDragger( event )"><p><img src="images/bread.jpg" title="Image of Bread" alt="Bread" >Bread</p></div><br/>                        
-				 		<div id="db2" value="1" class="draggerbay" style="font-size:21px;"
-				     		ondrop="return dropDragger( event )"
-				     		ondragover="return false"
-				     		ondragenter="return enterDragger( event )"><p><img src="images/berry.jpg" title="Image of Strawberry" alt="Strawberry">Strawberry</p></div><br/>  
-					 	<div id="db3" value="2" class="draggerbay" style="font-size:21px;"
-				     		ondrop="return dropDragger( event )"
-				     		ondragover="return false"
-				     		ondragenter="return enterDragger( event )"><p><img src="images/bulb.jpg" title="Image of Onion" alt="Onion">Onion</p></div><br/> 
-					 	<div id="db4" value="3" class="draggerbay" style="font-size:21px;"
-				     		ondrop="return dropDragger( event )"
-				     		ondragover="return false"
-				     		ondragenter="return enterDragger( event )"><p><img src="images/tomato.jpg" title="Image of Tomato"  alt="tomato">Tomato</p></div><br/>  
+				<div class="memory-card" data-framework="bread">
+					<img class="front-face" src="images/bread.jpg" alt="Bread">
+					<img class="back-face" src="images/knives.jpg" alt="Knives">
 				</div>
-				<p id="response">&nbsp;</p>
-				<input type="submit" name="button" value="Submit Your Answer"/><br/>
-				</form>
+				<div class="memory-card" data-framework="bread">
+					<img class="front-face" src="images/breadknife.jpg" alt="Bread Knife">
+					<img class="back-face" src="images/knives.jpg" alt="Knives">
 				</div>
+				<div class="memory-card" data-framework="vegetable">
+					<img class="front-face" src="images/bulb.jpg" alt="Onion">
+					<img class="back-face" src="images/knives.jpg" alt="Knives">
+				</div>
+				<div class="memory-card" data-framework="vegetable">
+					<img class="front-face" src="images/chef.jpg" alt="Chef Knife">
+					<img class="back-face"src="images/knives.jpg" alt="Knives">
+				</div>
+				<div class="memory-card" data-framework="fruit">
+					<img class="front-face" src="images/paring1.jpg" alt="Paring Knife">
+					<img class="back-face" src="images/knives.jpg" alt="Knives">
+				</div>
+				<div class="memory-card" data-framework="stir-fry">
+					<img class="front-face" src="images/santoku-knife.jpg" alt="Santoku Knife">
+					<img class="back-face"src="images/knives.jpg" alt="Knives">
+				</div>
+				<div class="memory-card" data-framework="tomato">
+					<img class="front-face" src="images/tomato.jpg" alt="tomato">
+					<img class="back-face" src="images/knives.jpg" alt="Knives">
+				</div>
+				<div class="memory-card" data-framework="tomato">
+					<img class="front-face"src="images/tomatoknife.jpg" alt="Tomato Knife">
+					<img class="back-face" src="images/knives.jpg" alt="Knives">
+				</div>
+				<div class="memory-card" data-framework="stir-fry">
+					<img class="front-face" src="images/vegetables.jpg" alt="Stir Fry Vegetables">
+					<img class="back-face" src="images/knives.jpg" alt="Knives">
+			</div>
+			<div class="memory-card" data-framework="meat">
+					<img class="front-face" src="images/cleaver.png" alt="Cleaver" style="background-color:white;">
+					<img class="back-face" src="images/knives.jpg" alt="Knives">
+			</div>
+			<div class="memory-card" data-framework="meat">
+					<img class="front-face" src="images/ribs.jpg" alt="Ribs">
+					<img class="back-face" src="images/knives.jpg" alt="Knives">
+			</div>
+			</section>
+			</div>
+			</div>
+			</div>
+<script src="scripts/topic-4b.js"></script>
+
 			<div class="container">
 		<div class="btn-group btn-group-justified">
 		
