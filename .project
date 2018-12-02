@@ -70,6 +70,11 @@
 			<location>C:/Users/doccr/git/ist5313-f18-fp1/module1/images/saute.jpg</location>
 		</link>
 		<link>
+			<name>module1/images/saute1.jpg</name>
+			<type>1</type>
+			<location>C:/Users/doccr/git/ist5313-f18-fp1/module1/images/saute1.jpg</location>
+		</link>
+		<link>
 			<name>module1/images/scale.png</name>
 			<type>1</type>
 			<location>C:/Users/doccr/git/ist5313-f18-fp1/module1/images/scale.png</location>
@@ -78,6 +83,11 @@
 			<name>module1/images/steel.jpg</name>
 			<type>1</type>
 			<location>C:/Users/doccr/git/ist5313-f18-fp1/module1/images/steel.jpg</location>
+		</link>
+		<link>
+			<name>module1/images/stock.jpg</name>
+			<type>1</type>
+			<location>C:/Users/doccr/git/ist5313-f18-fp1/module1/images/stock.jpg</location>
 		</link>
 		<link>
 			<name>module1/images/stockpots.jpg</name>

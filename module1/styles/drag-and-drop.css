@@ -27,8 +27,9 @@
 .dragger p
 {
 	font-weight: bold;
-	font-size:21px;
+	font-size:24px;
 }
+
 
 .draggerbay
 {
@@ -46,4 +47,8 @@
   -webkit-user-drag: element;
   -khtml-user-select: none;
   -webkit-user-select: none;
+}
+.draggerbay p{
+	font-weight: bold;
+	font-size:24px;
 }
