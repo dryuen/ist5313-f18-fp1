@@ -30,7 +30,7 @@
 	transition:transform 0.2s;
 }
 .memory-card.flip{
-	transform:rotateY(180deg);
+	transform:rotateY(180deg) translate(-258px);
 }
 .front-face,
 .back-face{
