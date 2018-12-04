@@ -48,7 +48,7 @@
   -khtml-user-select: none;
   -webkit-user-select: none;
 }
-.draggerbay p{
+.draggerbay {
 	font-weight: bold;
 	font-size:24px;
 }

@@ -75,7 +75,6 @@ function dropDragger( evt )
 		
 		// replace the HTML of the dragger bay with the dragger (the HTML)
 		evt.target.innerHTML = "<div class='dragger'><img src='" + oCurrentDragger.src + "'></div>";
-		
 		evt.target.style.border = "none";
 		oCurrentDragger.style.display = "none";
 	}
