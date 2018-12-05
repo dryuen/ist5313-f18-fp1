@@ -98,77 +98,66 @@ function finishCourse()
 function visitTopic1()
 
 {
-
  sessionStorage.setItem( "topic1Visited", "visited" );
  checkAllVisited();
 }
 function visitTopic2()
 
 {
-
  sessionStorage.setItem( "topic2Visited", "visited" );
  checkAllVisited();
 }
 function visitTopic2activity()
 
 {
-
  sessionStorage.setItem( "topic2activityVisited", "visited" );
  checkAllVisited();
 }
 function visitTopic3()
 
 {
-
  sessionStorage.setItem( "topic3Visited", "visited" );
  checkAllVisited();
 }
 function visitTopic3a()
 
 {
-
  sessionStorage.setItem( "topic3aVisited", "visited" );
  checkAllVisited();
 }
 function visitTopic3b()
 
 {
-
  sessionStorage.setItem( "topic3bVisited", "visited" );
  checkAllVisited();
 }
 function visitTopic3activity()
 
 {
-
  sessionStorage.setItem( "topic3activityVisited", "visited" );
  checkAllVisited();
 }
 function visitTopic4()
 
 {
-
  sessionStorage.setItem( "topic4Visited", "visited" );
  checkAllVisited();
 }
 function visitTopic4a()
 
 {
-
  sessionStorage.setItem( "topic4aVisited", "visited" );
  checkAllVisited();
 }
 function visitTopic5()
 
 {
-
  sessionStorage.setItem( "topic5Visited", "visited" );
  checkAllVisited();
 }
 function visitTopic5a()
 
 {
-
  sessionStorage.setItem( "topic5aVisited", "visited" );
  checkAllVisited();
 }
@@ -176,7 +165,6 @@ function visitTopic5a()
 function visitRecipeActivity()
 
 {
-
  sessionStorage.setItem( "recipeActivityVisited", "visited" );
  checkAllVisited();
 }
