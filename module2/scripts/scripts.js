@@ -181,7 +181,7 @@ function checkAllVisited()
 	var t4= sessionStorage.getItem("topic4Visited");
 	var t4a= sessionStorage.getItem("topic4aVisited");
 	var t5= sessionStorage.getItem("topic5Visited");
-	var 5a= sessionStorage.getItem("topic5aVisited");
+	var t5a= sessionStorage.getItem("topic5aVisited");
 	var ra= sessionStorage.getItem("recipeActivityVisited")
 if (t1 == "visited" && t2 == "visited" && t2act == "visited" && t3 == "visited" && t3a == "visited" && t3b == "visited" && t3act == "visited" && t4 == "visited" && t4a == "visited" && t5 == "visited" && t5a == "visited"  && ra == "visited" )
 	{document.getElementById ("content-frame").contentWindow.document.getElementById("quiz-link").style.display="inline";
